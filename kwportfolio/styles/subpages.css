@@ -1,0 +1,459 @@
+/******Colors
+  --primary-color: #153243; blue
+  --secondary-color: #AF3E4D; pink
+  --accent1-color: #788BFF;
+  --accent2-color: #B4B8AB;
+  --accent3-color: #CB8CF2;
+  --accent4-color: white;
+  *****/
+
+
+
+/*****Navigation*****/
+
+header {
+    display: grid;
+    grid-template-columns: 300px auto; /*Controls the relationship between the columns for the logo and the rest of the nav. Creates spacing between the logo and nav.*/
+    background-color: white;
+    box-shadow: 10px; /*Haven't figured out how to make this work*/
+    margin-bottom: 50px;
+}
+
+.logo {
+    width: 250px; /*Controls image size*/
+    margin: 20px;
+} /****NEW PIECE****/
+
+
+.logo_link {
+    justify-self: center;
+    align-self: center;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-align: center;
+    color: #153243;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: #788BFF;
+    color: white;
+}
+
+
+/****************Logo Style****************/
+
+#Logos {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    column-gap: 70px;
+}
+
+.archery {
+    grid-column: 2 / 6;
+    grid-row: 1 / 5;
+}
+
+.archery img{
+    display: flex;
+    width: 80%;
+    height: auto;
+}
+
+.khsdistrict {
+    grid-column: 6 / 10;
+    grid-row: 1 / 5;
+}
+
+.khsdistrict .khsdistrict-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.khsdistrict .khsdistrict-images img {
+    width: 100%;
+    height: auto;
+}
+
+.etsy {
+    grid-column: 2 / 6;
+    grid-row: 6 / 10;
+}
+
+.etsy img {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.etsy .etsycontent-container {
+    display: flex;
+}
+
+.etsy .etsytext-container {
+    gap: 10px;
+}
+
+.etsy .etsycontent-container img {
+    width: 50%;
+    height: 50%;
+}
+
+.khssoftware {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 6 / 10;
+    grid-row: 6 / 10;
+    column-gap: 20px; /* Gives me a gap between columns I think*/
+}
+
+.khssoftware .khssoftwareimage-container {
+    grid-column: 1 / 3;
+}
+
+.khssoftware .khssoftwareimage-container img {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.khssoftware .khssoftwaretext-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 3;
+}
+
+
+
+
+/****************Booklet style****************/
+
+#Hamlet {
+    margin: 50px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+    align-items: center;
+    color:#153243;
+    font-family: "Lora";
+    margin: 50px;
+    margin-top: 100px;
+}
+
+.hamlettitle h1 {
+    text-align: center;
+    align-items: center;
+    color:#153243;
+    font-family: "Lora";
+    margin: 30px;
+}
+
+.hamlettitle p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hamlettype {
+    display: inline-flex;
+}
+
+.hamlettype img {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.hamletimage {
+    display: inline-flex;
+}
+
+.hamletimage img {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.hamlettype p {
+    margin: 20px;
+}
+
+.hamletimage p {
+    margin: 20px;
+}
+
+
+#GC {
+    margin: 50px;
+    margin-top: 50px;
+}
+
+.GCintro {
+    display: inline-flex;
+}
+
+.GCintro img {
+    width: 200%;
+    height: 200%;
+}
+
+.GCintro p {
+    margin: 20px;
+}
+
+.GCgallery {
+    grid-template-columns: 6;
+    grid-template-rows: 2;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+.GCgallery img {
+    width: 30%;
+    height: 30%;
+    align-content: center;
+}
+
+
+
+/****************T-shirt style****************/
+
+#nhs {
+    display: inline-flex;
+}
+
+.nhstext {
+    text-align: left;
+    padding: 20px;
+}
+
+#nhs img  {
+    width: 50%;
+    height: auto;
+}
+
+
+#byui {
+    display: inline-flex;
+    margin-top: 50px;
+}
+
+#byui img {
+    width: 80%;
+    height: auto
+}
+
+.byuitext {
+    align-items: left;
+    align-content: left;
+    text-align: left;
+    padding: 20px;
+}
+
+
+/****************Yearbook style****************/
+
+#dand {
+    display: inline-flex;
+}
+
+img {
+    width: 80%;
+    height: auto;
+}
+
+
+
+#stronger {
+    display: inline-flex;
+    margin-top: 100px;
+}
+
+.dtext {
+    padding: 30px;
+}
+
+.strongertext {
+    padding: 30px;
+}
+
+
+/****************Posters style****************/
+
+#content {
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    margin: 50px;
+}
+
+.acimages {
+    display: inline-flex;
+}
+
+.actype img {
+    width: 100%;     
+    height: auto;   
+}
+
+.bradburythompson img {
+    width: 180%;     
+    height: auto; 
+}
+
+
+
+
+/****************Miscellaneous style****************/
+
+#mbody {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, auto);
+}
+
+
+#businesscard {
+    grid-column: 1 / 10;
+    grid-row: 1 / 5;
+    display: flex;
+    margin: 50px;
+    margin-top: -20px;
+}
+
+.bctext {
+    margin-left: 50px;
+}
+
+.bcimages {
+    display: inline-flex;
+    grid-column: 1 / 8;
+    gap: 10px;
+}
+
+.lastimage {
+    height: 250px;
+    width: auto;
+}
+
+.lastimage img {
+    height: 250px;
+    width: auto;
+}
+
+.first-two-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align the two images vertically */
+    width: auto;
+    height: 500px;
+    margin: 20px;
+}
+
+.first-two-images img {
+    height: 500px;
+    width: auto;
+}
+
+
+
+#wedding {
+    grid-column: 1 / 5;
+    grid-row: 6 / 10;
+    display: inline-flex;
+}
+
+.weddingimage img {
+    height: 600px;
+    width: auto;
+}
+
+.weddingtext {
+    margin: 20px;
+
+}
+
+
+#playingcard {
+    grid-column: 6 / 10;
+    grid-row: 6 / 10;
+    text-align: center;
+}
+
+.psychimages {
+    display: inline-flex;
+    align-items: center;
+}
+
+.psychimages img {
+    height: 400px;
+    width: auto;
+}
+
+.psychtext {
+    margin-top: -50px;
+}
+
+
+/***********Footer*******/
+
+footer {
+    background-color: #B4B8AB;
+    color: #113B51;
+    margin-top: 200px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+}
+
+footer a {
+    color: #113B51;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 20px;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    height: auto;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    background: #007bb5;
+    color: white;
+    margin-right: 20px;
+  }
+
+
+
+
+
