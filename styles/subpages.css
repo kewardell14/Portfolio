@@ -409,7 +409,41 @@ img {
 
 /*************************Outlet***************************/
 
+.outletheroimage img {
+    width: 100%;
+}
 
+.outletoverviewtext p {
+    padding: 30px;
+}
+
+.outletoverviewtext {
+    margin: 80px;
+    display: flex;
+}
+
+.outletcovers {
+    text-align: center;
+    margin: 30px;
+}
+
+.outletgroup {
+    text-align: center;
+}
+
+.outletgroup1 img {
+    height: 319px;
+    width: auto;
+}
+
+.outletgroup2 img {
+    height: 269px;
+    width: auto;
+}
+
+.theexhibitimages {
+    text-align: center;
+}
 
 
 /***********Footer*******/
