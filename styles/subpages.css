@@ -441,9 +441,29 @@ img {
     width: auto;
 }
 
-.theexhibitimages {
-    text-align: center;
+.theexhibitimages img {
+    padding: 5px;
+    height: 510px;
+    width: auto;
 }
+
+.theexhibitimages {
+    display: flex;
+    justify-content: center;
+}
+
+.feathersimages img {
+    padding: 5px;
+    height: 510px;
+    width: auto;
+}
+
+.feathersimages {
+    display: flex;
+    justify-content: center;
+}
+
+
 
 
 /***********Footer*******/
