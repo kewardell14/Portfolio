@@ -409,16 +409,18 @@ img {
 
 /*************************Outlet***************************/
 
+
+
 .outletheroimage img {
     width: 100%;
 }
 
-.outletoverviewtext p {
+.outletdescription p {
     padding: 30px;
 }
 
 .outletoverviewtext {
-    margin: 80px;
+    margin: 100px;
     display: flex;
 }
 
@@ -441,9 +443,16 @@ img {
     width: auto;
 }
 
+
+
+.theexhibit p {
+    margin: 50px;
+    margin-bottom: 100px;
+}
+
 .theexhibitimages img {
-    padding: 5px;
-    height: 510px;
+    padding: 10px;
+    height: 640px;
     width: auto;
 }
 
@@ -452,15 +461,99 @@ img {
     justify-content: center;
 }
 
+
+
 .feathersimages img {
-    padding: 5px;
-    height: 510px;
+    padding: 10px;
+    height: 640px;
     width: auto;
 }
 
 .feathersimages {
     display: flex;
     justify-content: center;
+}
+
+.feathersonthesea p {
+    margin: 50px;
+    margin-bottom: 100px;
+}
+
+
+
+
+.tnnwimages {
+    text-align: center;
+}
+
+.tnnwfocusspread img {
+    width: 1488px;
+    height: auto;
+}
+
+.tnnwspreadsmockup img {
+    width: 480px;
+    height: auto;
+    padding: 10px;
+}
+
+.onthetrainnorthward p {
+    margin: 50px;
+    margin-bottom: 100px;
+}
+
+
+.sundaydriveimages {
+    text-align: center;
+}
+
+.sundaydrive img {
+    width: 730px;
+    height: auto;
+    padding: 10px;
+}
+
+.sundaydrive p {
+    margin: 50px;
+    margin-bottom: 100px;
+}
+
+
+
+.theweightofasoleimg {
+    text-align: center;
+}
+
+.theweightofasoleimg img {
+    width: 1480px;
+    height: auto;
+    padding: 10px;
+}
+
+.theweightofasole p {
+    margin: 50px;
+    margin-bottom: 100px;
+}
+
+
+
+.galleryimages {
+    text-align: center;
+}
+
+.galleryimages img {
+    width: 730px;
+    height: auto;
+    padding: 10px;
+}
+
+.galleryintroandspread h3 {
+    margin-left: 50px;
+}
+
+.galleryintroandspread p {
+    margin: 50px;
+    margin-bottom: 100px;
 }
 
 
