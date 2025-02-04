@@ -410,6 +410,12 @@ img {
 /*************************Outlet***************************/
 
 
+.outletspreads h3 {
+    color: #153243;
+    margin-bottom: -30px;
+    margin-left: 50px;
+}
+
 
 .outletheroimage img {
     width: 100%;
