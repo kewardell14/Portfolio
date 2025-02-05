@@ -435,6 +435,11 @@ h1 {
     margin: 30px;
 }
 
+.outletcovers img {
+    width: 80%;
+    height: auto;
+}
+
 .outletgroup {
     text-align: center;
 }
