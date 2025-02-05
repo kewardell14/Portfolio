@@ -270,8 +270,8 @@ h1 {
     display: inline-flex;
 }
 
-img {
-    width: 80%;
+#dand img, #stronger img {
+    width: 30%;
     height: auto;
 }
 
