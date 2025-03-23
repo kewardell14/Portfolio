@@ -42,7 +42,7 @@ body {
 img {
   display: block;
   margin: 0 auto;
-  width: 700px;
+  width: 50%;
   height: auto;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -66,6 +66,11 @@ header {
 }
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
+}
+
+.logo {
+  width: 500px;
+  height: auto;
 }
 
 p {
@@ -151,33 +156,23 @@ nav a:hover {
   background-color: #ccc;
   line-height: 3em;
 }
-.Logos {
+.outlet {
   grid-area: page1;
   background-color: #ccc;
   line-height: 3em;
 }
-.Booklets {
+.ux_ui {
   grid-area: page2;
   background-color: #ccc;
   line-height: 3em;
 }
-.T-Shirts {
+.booklets {
   grid-area: page3;
   background-color: #ccc;
   line-height: 3em;
 }
-.Yearbook-Pages {
+.logos {
   grid-area: page4;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.Posters {
-  grid-area: page5;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.Mischelaneous {
-  grid-area: page6;
   background-color: #ccc;
   line-height: 3em;
 }
