@@ -15,7 +15,6 @@ header {
     display: grid;
     grid-template-columns: 300px auto; /*Controls the relationship between the columns for the logo and the rest of the nav. Creates spacing between the logo and nav.*/
     background-color: white;
-    box-shadow: 10px; /*Haven't figured out how to make this work*/
     margin-bottom: 50px;
 }
 
@@ -49,9 +48,229 @@ nav a:hover {
     color: white;
 }
 
+/****************General Styles****************/
+
+/***Hero Image**/
+.outletheroimage img, .archeryheroimage img, .hamletheroimage img, .etsyheroimage img, .bankingheroimage img, .gcbookletheroimage img {
+    width: 100%;
+}
+
+/**H3**/
+h3 {
+    color: #153243;
+    margin-bottom: -20px;
+    margin-left: 300px;
+}
+
+/**Normal Paragraph*/
+/*p {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+}*/
+
+p {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+
+/**Description text, client, and disciplines**/
+.outletoverviewtext, .gcbookletoverviewtext, .archeryoverviewtext, .etsyoverviewtext, .hamletoverviewtext, .bankingoverviewtext {
+    margin: 50px;
+    display: flex;
+}
+
+/**Descriptive text beginning**/
+.outletdescription p, .gcbookletdescription p, .archerydescription p, .etsydescription p, .hamletdescription p, .bankingdescription p {
+    padding: 40px;
+    margin-left: 200px;
+    margin-right: 0px;
+}
+
+/**Client and Disciplines box**/
+.outletclientanddisciplines, .gcbookletclientanddisciplines, .archeryclientanddisciplines, .etsyclientanddisciplines, .hamletclientanddisciplines, .bankingclientanddisciplines {
+    padding: 30px;
+    margin-left: -20px;
+    margin-right: 200px;
+}
+
+/**Client and Disciplines paragraph text**/
+.outletclientanddisciplines p, .gcbookletclientanddisciplines p, .archeryclientanddisciplines p, .etsyclientanddisciplines p, .hamletclientanddisciplines p, .bankingclientanddisciplines p {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+}
+
+/**Client and Disciplines heading text**/
+.outletoverviewtext h3, .gcbookletoverviewtext h3, .archeryoverviewtext h3, .etsyoverviewtext h3, .hamletoverviewtext h3, .bankingoverviewtext h3 {
+    margin-left: 0px;
+    margin-bottom: -40px;
+}
+
+
+/*************************Outlet***************************/
+
+
+.outletcovers {
+    text-align: center;
+    margin: 30px;
+}
+
+.outletcovers img {
+    width: 80%;
+    height: auto;
+}
+
+.outletgroup {
+    text-align: center;
+}
+
+.outletgroup1 img {
+    height: 319px;
+    width: auto;
+}
+
+.outletgroup2 img {
+    height: 269px;
+    width: auto;
+}
+
+
+/*
+.theexhibit p {
+    margin: 50px;
+    margin-bottom: 100px;
+}
+*/
+
+.theexhibitimages img {
+    padding: 10px;
+    height: 640px;
+    width: auto;
+}
+
+.theexhibitimages {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.feathersimages img {
+    padding: 10px;
+    height: 640px;
+    width: auto;
+}
+
+.feathersimages {
+    display: flex;
+    justify-content: center;
+}
+
+/*
+.feathersonthesea p {
+    margin: 50px;
+    margin-bottom: 100px;
+}
+*/
+
+
+
+
+.tnnwimages {
+    text-align: center;
+}
+
+.tnnwfocusspread img {
+    width: 1488px;
+    height: auto;
+}
+
+.tnnwspreadsmockup img {
+    width: 480px;
+    height: auto;
+    padding: 10px;
+}
+
+
+/*
+.onthetrainnorthward p {
+    margin: 50px;
+    margin-bottom: 100px;
+}
+*/
+
+
+.sundaydriveimages {
+    text-align: center;
+}
+
+.sundaydrive img {
+    width: 730px;
+    height: auto;
+    padding: 10px;
+}
+
+/*
+.sundaydrive p {
+    margin: 50px;
+    margin-bottom: 100px;
+}
+*/
+
+
+
+.theweightofasoleimg {
+    text-align: center;
+}
+
+.theweightofasoleimg img {
+    width: 1480px;
+    height: auto;
+    padding: 10px;
+}
+
+
+/*
+.theweightofasole p {
+    margin: 50px;
+    margin-bottom: 100px;
+}
+*/
+
+
+
+.galleryimages {
+    text-align: center;
+}
+
+.galleryimages img {
+    width: 730px;
+    height: auto;
+    padding: 10px;
+}
+
+.galleryintroandspread h3 {
+    margin-left: 50px;
+}
+
+
+/*
+.galleryintroandspread p {
+    margin: 50px;
+    margin-bottom: 100px;
+}
+*/
+
+
 
 /****************Logo Style****************/
 
+/*
 #Logos {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -115,7 +334,7 @@ nav a:hover {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 6 / 10;
     grid-row: 6 / 10;
-    column-gap: 20px; /* Gives me a gap between columns I think*/
+    column-gap: 20px;
 }
 
 .khssoftware .khssoftwareimage-container {
@@ -134,12 +353,14 @@ nav a:hover {
     justify-content: center;
     grid-column: 3;
 }
+    */
 
 
 
 
 /****************Booklet style****************/
 
+/*
 #Hamlet {
     margin: 50px;
     margin-bottom: 50px;
@@ -227,10 +448,11 @@ h1 {
     align-content: center;
 }
 
-
+*/
 
 /****************T-shirt style****************/
 
+/*
 #nhs {
     display: inline-flex;
 }
@@ -262,10 +484,11 @@ h1 {
     text-align: left;
     padding: 20px;
 }
-
+*/
 
 /****************Yearbook style****************/
 
+/*
 #dand {
     display: inline-flex;
 }
@@ -289,10 +512,11 @@ h1 {
 .strongertext {
     padding: 30px;
 }
-
+*/
 
 /****************Posters style****************/
 
+/*
 #content {
     grid-template-columns: 2;
     grid-template-rows: 1;
@@ -312,12 +536,13 @@ h1 {
     width: 180%;     
     height: auto; 
 }
-
+*/
 
 
 
 /****************Miscellaneous style****************/
 
+/*
 #mbody {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -356,7 +581,7 @@ h1 {
 .first-two-images {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Align the two images vertically */
+    justify-content: space-between;
     width: auto;
     height: 500px;
     margin: 20px;
@@ -406,166 +631,7 @@ h1 {
     margin-top: -50px;
 }
 
-
-/*************************Outlet***************************/
-
-
-.outletspreads h3 {
-    color: #153243;
-    margin-bottom: -30px;
-    margin-left: 50px;
-}
-
-
-.outletheroimage img {
-    width: 100%;
-}
-
-.outletdescription p {
-    padding: 30px;
-}
-
-.outletoverviewtext {
-    margin: 100px;
-    display: flex;
-}
-
-.outletcovers {
-    text-align: center;
-    margin: 30px;
-}
-
-.outletcovers img {
-    width: 80%;
-    height: auto;
-}
-
-.outletgroup {
-    text-align: center;
-}
-
-.outletgroup1 img {
-    height: 319px;
-    width: auto;
-}
-
-.outletgroup2 img {
-    height: 269px;
-    width: auto;
-}
-
-
-
-.theexhibit p {
-    margin: 50px;
-    margin-bottom: 100px;
-}
-
-.theexhibitimages img {
-    padding: 10px;
-    height: 640px;
-    width: auto;
-}
-
-.theexhibitimages {
-    display: flex;
-    justify-content: center;
-}
-
-
-
-.feathersimages img {
-    padding: 10px;
-    height: 640px;
-    width: auto;
-}
-
-.feathersimages {
-    display: flex;
-    justify-content: center;
-}
-
-.feathersonthesea p {
-    margin: 50px;
-    margin-bottom: 100px;
-}
-
-
-
-
-.tnnwimages {
-    text-align: center;
-}
-
-.tnnwfocusspread img {
-    width: 1488px;
-    height: auto;
-}
-
-.tnnwspreadsmockup img {
-    width: 480px;
-    height: auto;
-    padding: 10px;
-}
-
-.onthetrainnorthward p {
-    margin: 50px;
-    margin-bottom: 100px;
-}
-
-
-.sundaydriveimages {
-    text-align: center;
-}
-
-.sundaydrive img {
-    width: 730px;
-    height: auto;
-    padding: 10px;
-}
-
-.sundaydrive p {
-    margin: 50px;
-    margin-bottom: 100px;
-}
-
-
-
-.theweightofasoleimg {
-    text-align: center;
-}
-
-.theweightofasoleimg img {
-    width: 1480px;
-    height: auto;
-    padding: 10px;
-}
-
-.theweightofasole p {
-    margin: 50px;
-    margin-bottom: 100px;
-}
-
-
-
-.galleryimages {
-    text-align: center;
-}
-
-.galleryimages img {
-    width: 730px;
-    height: auto;
-    padding: 10px;
-}
-
-.galleryintroandspread h3 {
-    margin-left: 50px;
-}
-
-.galleryintroandspread p {
-    margin: 50px;
-    margin-bottom: 100px;
-}
+*/
 
 
 
