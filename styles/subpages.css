@@ -123,6 +123,15 @@ select {
     margin-top: 200;
 }
 
+.hide {
+    display: none;
+}
+
+header button {
+    background: none;
+    stroke: none;
+}
+
 
 /*************************Outlet***************************/
 
