@@ -26,11 +26,11 @@ function changeTheme() {
 
     if (selectedTheme == "dark") {
         document.body.classList.add("dark");
-        document.querySelector("img").src = "byui-logo_white.png"; //Maybe make a black and white image for the website
+        document.querySelector("#logo_link img").src = "images/Portfolio Logo White.png"; //Maybe make a black and white image for the website
     }
     else {
         document.body.classList.remove("dark");
-        document.querySelector("img").src = "byui-logo_blue.webp";
+        document.querySelector("#logo_link img").src = "images/Portfolio Logo smaller background.png";
     }
 }
 themeSelector.addEventListener('change', changeTheme);
@@ -40,7 +40,7 @@ rendergallery(homegallery)
 
 
 
-document.getElementById('theme-select').addEventListener('change', function() {
+/*document.getElementById('theme-select').addEventListener('change', function() {
   var selectedOption = this.options[this.selectedIndex];
   var iconSrc = selectedOption.getAttribute('data-icon');
   var selectedOptionText = selectedOption.textContent;
@@ -61,4 +61,4 @@ window.addEventListener('load', function() {
 
   var customSelectDiv = document.querySelector('.custom-select');
   customSelectDiv.insertBefore(selectedOptionDiv, customSelectDiv.firstChild);
-});
+});*/

@@ -11,10 +11,57 @@
 
 /*****Navigation*****/
 
+.dark {
+    background-color: #333;
+    color: white;
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+
+    nav {
+        background-color: #333;
+    }
+
+    nav a, .dropbtn {
+        color: white;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #788BFF;
+        color: white;
+    }
+
+    .dropdown-content a {
+        background-color: white;
+        color: #788BFF
+    }
+
+}
+
+select {
+    width: 90px;
+    height: 60px;
+    padding: 20px;
+    background: #AF3E4D;
+    font-family: 'Lora';
+    font-size: 16px;
+    color: white;
+}
+
+
+.hide {
+    display: none;
+}
+
+header button {
+    background: none;
+    stroke: none;
+}
+
+
 header {
     display: grid;
     grid-template-columns: 300px auto; /*Controls the relationship between the columns for the logo and the rest of the nav. Creates spacing between the logo and nav.*/
-    background-color: white;
     margin-bottom: 50px;
 }
 
@@ -57,7 +104,6 @@ header button {
 
 /* Style The Dropdown Button */
 .dropbtn {
-    background-color: none;
     color: #153243;
     padding: 20px;
     font-size: 16px;
@@ -171,29 +217,107 @@ p {
     margin-bottom: -40px;
 }
 
-.dark {
-    background-color: #333;
-    color: white;
+/******************Home*********************/
 
+/***********Bio*******/
+
+
+#bio {
+    display: grid;
+    grid-template-columns: 10;
+    grid-template-rows: 10;
+    margin: 30px;
 }
 
-select {
-    width: 90px;
-    height: 60px;
-    padding: 20px;
-    background: #AF3E4D;
-    font-family: 'Lora';
-    font-size: 16px;
-    color: white;
+
+.profile {
+    margin: 20px 0px;
+    border-radius: 15px;
+    width: 80%;
+    grid-column: 2 / 6;
+    grid-row: 6 / 9;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
-.hide {
-    display: none;
+.msg {
+    background-color: white;
+    line-height: 1.5em;
+    margin: 20px 0px;
+    padding: 25px;
+    /*color: black; not necessary, I believe.*/
+    grid-column: 5 / 9;
+    grid-row: 7 / 8;
+    box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 25px;
 }
 
-header button {
-    background: none;
-    stroke: none;
+.msg p {
+    color: #153243;
+    padding-bottom: 15px;
+    font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .8em;
+}
+
+.msg h2 {
+    color: #AF3E4D;
+    font-family: "Satisfy";
+}
+
+
+/*.profile, .msg {
+    /*width: 40%; /*Controls how large the things appear*/
+/*display: block;*/
+/*margin: 0 auto;
+}*/
+
+
+
+h1 {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: -70px;
+    color: #113B51;
+}
+
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 40px;
+    padding: 100px;
+}
+
+.grid-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.grid-item-y {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+#gallery img {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    object-fit: contain;
+}
+
+#gallery img:hover {
+    opacity: 0.5;
 }
 
 
@@ -374,22 +498,6 @@ header button {
     height: auto;
 }
 
-.khsdistrict {
-    grid-column: 6 / 10;
-    grid-row: 1 / 5;
-}
-
-.khsdistrict .khsdistrict-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.khsdistrict .khsdistrict-images img {
-    width: 100%;
-    height: auto;
-}
-
 .etsy {
     grid-column: 2 / 6;
     grid-row: 6 / 10;
@@ -412,31 +520,6 @@ header button {
 .etsy .etsycontent-container img {
     width: 50%;
     height: 50%;
-}
-
-.khssoftware {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column: 6 / 10;
-    grid-row: 6 / 10;
-    column-gap: 20px;
-}
-
-.khssoftware .khssoftwareimage-container {
-    grid-column: 1 / 3;
-}
-
-.khssoftware .khssoftwareimage-container img {
-    display: flex;
-    width: 100%;
-    height: auto;
-}
-
-.khssoftware .khssoftwaretext-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    grid-column: 3;
 }
     */
 
@@ -535,191 +618,6 @@ h1 {
 
 */
 
-/****************T-shirt style****************/
-
-/*
-#nhs {
-    display: inline-flex;
-}
-
-.nhstext {
-    text-align: left;
-    padding: 20px;
-}
-
-#nhs img  {
-    width: 50%;
-    height: auto;
-}
-
-
-#byui {
-    display: inline-flex;
-    margin-top: 50px;
-}
-
-#byui img {
-    width: 80%;
-    height: auto
-}
-
-.byuitext {
-    align-items: left;
-    align-content: left;
-    text-align: left;
-    padding: 20px;
-}
-*/
-
-/****************Yearbook style****************/
-
-/*
-#dand {
-    display: inline-flex;
-}
-
-#dand img, #stronger img {
-    width: 30%;
-    height: auto;
-}
-
-
-
-#stronger {
-    display: inline-flex;
-    margin-top: 100px;
-}
-
-.dtext {
-    padding: 30px;
-}
-
-.strongertext {
-    padding: 30px;
-}
-*/
-
-/****************Posters style****************/
-
-/*
-#content {
-    grid-template-columns: 2;
-    grid-template-rows: 1;
-    margin: 50px;
-}
-
-.acimages {
-    display: inline-flex;
-}
-
-.actype img {
-    width: 100%;     
-    height: auto;   
-}
-
-.bradburythompson img {
-    width: 180%;     
-    height: auto; 
-}
-*/
-
-
-
-/****************Miscellaneous style****************/
-
-/*
-#mbody {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, auto);
-}
-
-
-#businesscard {
-    grid-column: 1 / 10;
-    grid-row: 1 / 5;
-    display: flex;
-    margin: 50px;
-    margin-top: -20px;
-}
-
-.bctext {
-    margin-left: 50px;
-}
-
-.bcimages {
-    display: inline-flex;
-    grid-column: 1 / 8;
-    gap: 10px;
-}
-
-.lastimage {
-    height: 250px;
-    width: auto;
-}
-
-.lastimage img {
-    height: 250px;
-    width: auto;
-}
-
-.first-two-images {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: auto;
-    height: 500px;
-    margin: 20px;
-}
-
-.first-two-images img {
-    height: 500px;
-    width: auto;
-}
-
-
-
-#wedding {
-    grid-column: 1 / 5;
-    grid-row: 6 / 10;
-    display: inline-flex;
-}
-
-.weddingimage img {
-    height: 600px;
-    width: auto;
-}
-
-.weddingtext {
-    margin: 20px;
-
-}
-
-
-#playingcard {
-    grid-column: 6 / 10;
-    grid-row: 6 / 10;
-    text-align: center;
-}
-
-.psychimages {
-    display: inline-flex;
-    align-items: center;
-}
-
-.psychimages img {
-    height: 400px;
-    width: auto;
-}
-
-.psychtext {
-    margin-top: -50px;
-}
-
-*/
-
-
-
 
 /***********Footer*******/
 
@@ -730,7 +628,7 @@ footer {
     padding: 10px 10px;
     display: flex;
     justify-content: space-around;
-    font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lora', Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
 }
 
