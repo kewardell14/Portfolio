@@ -19,13 +19,6 @@ function rendergallery(homegallery) { //Displays the gallery
 }
 
 
-const menuButton = document.getElementById("menu-button");
-const menuItems = document.getElementById("menu-items");
-menuButton.addEventListener("click", () => { // For Dropdown
-    menuItems.classList.toggle('hide');
-});
-
-
 
 const themeSelector = document.querySelector("select") // replace with code to select dropdown element out of the HTML (Hint: document.querySelector)
 function changeTheme() {
@@ -44,3 +37,28 @@ themeSelector.addEventListener('change', changeTheme);
 
 
 rendergallery(homegallery)
+
+
+
+document.getElementById('theme-select').addEventListener('change', function() {
+  var selectedOption = this.options[this.selectedIndex];
+  var iconSrc = selectedOption.getAttribute('data-icon');
+  var selectedOptionText = selectedOption.textContent;
+
+  var selectedOptionDiv = document.querySelector('.custom-select .selected-option');
+  selectedOptionDiv.innerHTML = `<img src="${iconSrc}" alt="${selectedOptionText}"> ${selectedOptionText}`;
+});
+
+window.addEventListener('load', function() {
+  var select = document.getElementById('theme-select');
+  var initialSelectedOption = select.options[select.selectedIndex];
+  var iconSrc = initialSelectedOption.getAttribute('data-icon');
+  var selectedOptionText = initialSelectedOption.textContent;
+
+  var selectedOptionDiv = document.createElement('div');
+  selectedOptionDiv.classList.add('selected-option');
+  selectedOptionDiv.innerHTML = `<img src="${iconSrc}" alt="${selectedOptionText}"> ${selectedOptionText}`;
+
+  var customSelectDiv = document.querySelector('.custom-select');
+  customSelectDiv.insertBefore(selectedOptionDiv, customSelectDiv.firstChild);
+});
