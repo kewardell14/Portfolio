@@ -316,6 +316,9 @@ h1 {
 
 /*************************Outlet***************************/
 
+.outletoverviewtext h3 {
+    margin-left: 0px;
+}
 
 .outletcovers {
     text-align: center;
@@ -414,6 +417,28 @@ h1 {
     padding: 10px;
 }
 
+/***************Banking Website************/
+
+.bankingheroimage img {
+    width: 100%;
+}
+
+.bankingoverviewtext h3 {
+    margin-left: 0px;
+}
+
+.bankingimages {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.bankingimages img {
+    width: 45%;
+    height: auto;
+}
 
 
 /****************Hamlet Style**************/
@@ -432,19 +457,30 @@ h1 {
 }
 
 
-/****************Logo Style****************/
+/****************GC Booklet****************/
 
-/*
-#Logos {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    column-gap: 70px;
+.gcbookletoverviewtext h3 {
+    margin-left: 0px;
 }
 
-.archery {
-    grid-column: 2 / 6;
-    grid-row: 1 / 5;
+.gcbookletimages {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gcbookletimages img {
+    width: 49%;
+    height: auto;
+}
+
+
+/****************Archery Logo Style****************/
+
+.archeryoverviewtext h3 {
+    margin-left: 0px;
 }
 
 .archery img{
@@ -453,125 +489,18 @@ h1 {
     height: auto;
 }
 
-.etsy {
-    grid-column: 2 / 6;
-    grid-row: 6 / 10;
-}
 
-.etsy img {
-    display: flex;
+/***************Etsy Shop Logo********************/
+
+.etsyheroimage img {
     width: 100%;
-    height: auto;
 }
 
-.etsy .etsycontent-container {
-    display: flex;
-}
-
-.etsy .etsytext-container {
-    gap: 10px;
-}
-
-.etsy .etsycontent-container img {
-    width: 50%;
-    height: 50%;
-}
-    */
-
-
-
-
-/****************Booklet style****************/
-
-/*
-#Hamlet {
-    margin: 50px;
-    margin-bottom: 50px;
-}
-
-h1 {
-    text-align: center;
-    align-items: center;
-    color:#153243;
-    font-family: "Lora";
-    margin: 50px;
-    margin-top: 100px;
-}
-
-.hamlettitle h1 {
-    text-align: center;
-    align-items: center;
-    color:#153243;
-    font-family: "Lora";
-    margin: 30px;
-}
-
-.hamlettitle p {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.hamlettype {
-    display: inline-flex;
-}
-
-.hamlettype img {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-}
-
-.hamletimage {
-    display: inline-flex;
-}
-
-.hamletimage img {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-}
-
-.hamlettype p {
-    margin: 20px;
-}
-
-.hamletimage p {
-    margin: 20px;
+.etsyoverviewtext h3 {
+    margin-left: 0px;
 }
 
 
-#GC {
-    margin: 50px;
-    margin-top: 50px;
-}
-
-.GCintro {
-    display: inline-flex;
-}
-
-.GCintro img {
-    width: 200%;
-    height: 200%;
-}
-
-.GCintro p {
-    margin: 20px;
-}
-
-.GCgallery {
-    grid-template-columns: 6;
-    grid-template-rows: 2;
-    row-gap: 30px;
-    column-gap: 30px;
-}
-
-.GCgallery img {
-    width: 30%;
-    height: 30%;
-    align-content: center;
-}
-
-*/
 
 
 /***********Footer*******/
