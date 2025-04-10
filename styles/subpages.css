@@ -39,8 +39,8 @@
 }
 
 select {
-    width: 90px;
-    height: 60px;
+    width: 100px;
+    height: 70px;
     padding: 20px;
     background: #AF3E4D;
     font-family: 'Lora';
@@ -489,6 +489,20 @@ h1 {
     height: auto;
 }
 
+.archeryimages {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.archeryimages img {
+    width: 70%;
+    height: auto;
+    margin: 30px;
+}
+
 
 /***************Etsy Shop Logo********************/
 
@@ -500,7 +514,13 @@ h1 {
     margin-left: 0px;
 }
 
-
+.etsyimages {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
 
 
 /***********Footer*******/
@@ -512,7 +532,7 @@ footer {
     padding: 10px 10px;
     display: flex;
     justify-content: space-around;
-    font-family: 'Lora', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Lora", Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
 }
 
