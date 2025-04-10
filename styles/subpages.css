@@ -162,25 +162,18 @@ header button {
 }
 
 /**H3**/
-h3 {
-    color: #153243;
-    margin-bottom: -20px;
-    margin-left: 300px;
-}
-
-/**Normal Paragraph*/
-/*p {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    margin-left: 300px;
-    margin-right: 300px;
-}*/
 
 p {
     margin-top: 50px;
     margin-bottom: 100px;
     margin-left: 300px;
     margin-right: 300px;
+}
+
+h3 {
+    color: #153243;
+    margin-bottom: -20px;
+    margin-left: 300px;
 }
 
 
@@ -213,9 +206,9 @@ p {
 
 /**Client and Disciplines heading text**/
 .outletoverviewtext h3, .gcbookletoverviewtext h3, .archeryoverviewtext h3, .etsyoverviewtext h3, .hamletoverviewtext h3, .bankingoverviewtext h3 {
-    margin-left: 0px;
     margin-bottom: -40px;
 }
+
 
 /******************Home*********************/
 
@@ -348,14 +341,6 @@ h1 {
     width: auto;
 }
 
-
-/*
-.theexhibit p {
-    margin: 50px;
-    margin-bottom: 100px;
-}
-*/
-
 .theexhibitimages img {
     padding: 10px;
     height: 640px;
@@ -380,15 +365,6 @@ h1 {
     justify-content: center;
 }
 
-/*
-.feathersonthesea p {
-    margin: 50px;
-    margin-bottom: 100px;
-}
-*/
-
-
-
 
 .tnnwimages {
     text-align: center;
@@ -406,14 +382,6 @@ h1 {
 }
 
 
-/*
-.onthetrainnorthward p {
-    margin: 50px;
-    margin-bottom: 100px;
-}
-*/
-
-
 .sundaydriveimages {
     text-align: center;
 }
@@ -423,14 +391,6 @@ h1 {
     height: auto;
     padding: 10px;
 }
-
-/*
-.sundaydrive p {
-    margin: 50px;
-    margin-bottom: 100px;
-}
-*/
-
 
 
 .theweightofasoleimg {
@@ -444,15 +404,6 @@ h1 {
 }
 
 
-/*
-.theweightofasole p {
-    margin: 50px;
-    margin-bottom: 100px;
-}
-*/
-
-
-
 .galleryimages {
     text-align: center;
 }
@@ -463,18 +414,22 @@ h1 {
     padding: 10px;
 }
 
-.galleryintroandspread h3 {
-    margin-left: 50px;
+
+
+/****************Hamlet Style**************/
+
+.hamletoverviewtext h3 {
+    margin-left: 0px;
 }
 
 
-/*
-.galleryintroandspread p {
-    margin: 50px;
-    margin-bottom: 100px;
+.hamlettypecover img, .hamletimagecover img {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
-*/
-
 
 
 /****************Logo Style****************/
