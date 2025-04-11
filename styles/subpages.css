@@ -610,7 +610,7 @@ footer p a:hover {
         width: 100%;
         text-align: center;
     }
-    
+
     .dropdown-content a {
         width: 100%;
     }
@@ -684,6 +684,40 @@ footer p a:hover {
         padding-top: 0px;
         padding-bottom: 0px;
     }
+
+
+    /********Home*******/
+
+    #bio {
+        display: block;
+    }
+
+    #bio img {
+        width: 100%;
+        height: auto;
+    }
+
+    #bio p {
+        margin-top: -30px;
+        margin-bottom: -5px;
+    }
+
+    .msg {
+        margin-bottom: 100px;
+        box-shadow: none;
+
+        p {
+            padding-left: 0px;
+        }
+    }
+
+    #gallery {
+        margin-top: 80px;
+        display: block;
+        padding: 20px;
+    }
+
+
 
 
     /********Outlet*****/
