@@ -561,7 +561,8 @@ footer p a:hover {
 .fa {
     padding: 20px;
     font-size: 30px;
-    width: 20px;
+    width: 25px;
+    height: 25px;
     text-align: center;
     text-decoration: none;
     background: #007bb5;
@@ -572,9 +573,159 @@ footer p a:hover {
 
 
 
+@media screen and (max-width: 700px) {
+    header {
+        display: block;
+        text-align: center;
+    }
 
-/*@media screen and (max-width: 500px) {
+    .logo {
+        margin: auto;
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    nav, .dropdown {
+        display: block;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 15px;
+        text-align: center;
+    }
     
 
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dropdown-content {
+        position: static;
+        /* no absolute positioning on mobile */
+        box-shadow: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .dropdown-content a {
+        width: 100%;
+    }
+
+
+
+
+    .dropbtn {
+        padding: 15px;
+    }
+
+    .dropdown-content a {
+        text-align: center;
+    }
+
+    select {
+        margin-top: 25px;
+    }
+
+
+    p, h3 {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 40px;
+    }
+
+    h3 {
+        margin-bottom: -110px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    .outletdescription p, .gcbookletdescription p, .archerydescription p, .etsydescription p, .hamletdescription p, .bankingdescription p {
+        margin-left: 0px;
+        margin-bottom: 0px;
+        padding-bottom: -40px;
+    }
+
+    .outletoverviewtext, .gcbookletoverviewtext, .archeryoverviewtext, .etsyoverviewtext, .hamletoverviewtext, .bankingoverviewtext {
+        display: block;
+        margin: 0px;
+    }
+
+    .outletclientanddisciplines, .gcbookletclientanddisciplines, .archeryclientanddisciplines, .etsyclientanddisciplines, .hamletclientanddisciplines, .bankingclientanddisciplines {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 0px;
+    }
+
+    .outletclientanddisciplines p,
+    .gcbookletclientanddisciplines p,
+    .archeryclientanddisciplines p,
+    .etsyclientanddisciplines p,
+    .hamletclientanddisciplines p,
+    .bankingclientanddisciplines p {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .outletclientanddisciplines h3,
+    .gcbookletclientanddisciplines h3,
+    .archeryclientanddisciplines h3,
+    .etsyclientanddisciplines h3,
+    .hamletclientanddisciplines h3,
+    .bankingclientanddisciplines h3 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+
+    /********Outlet*****/
+
+    .outletspreads {
+        display: inline-block
+    }
+
+    .outletspreads img {
+        width: 90%;
+        height: auto;
+    }
+
+    /************Banking Website***********/
+
+    .bankingimages img, .archeryimages img, .etsyimages img, .hamletimages img, .gcbookletimages img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    footer {
+        display: block;
+        text-align: center;
+        margin: 30px;
+        padding: 0px;
+    }
+
+    footer p {
+        padding: 5px;
+    }
+
+    .fa {
+        margin-right: 0px;
+    }
+
+
+
+}
+
+
+/*@media screen and (max-width: 1000px) {
+    
 
 }*/
