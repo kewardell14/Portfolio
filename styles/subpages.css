@@ -156,6 +156,13 @@ header button {
 
 /**************** General Styles/Hero Images and Intro ****************/
 
+/***Process Book and Case Study Links********/
+.process {
+    color: #788BFF;
+}
+
+
+
 /***Hero Image**/
 .outletheroimage img, .archeryheroimage img, .hamletheroimage img, .etsyheroimage img, .bankingheroimage img, .gcbookletheroimage img {
     width: 100%;
