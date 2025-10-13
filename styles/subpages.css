@@ -14,7 +14,13 @@
 .dark {
     background-color: #333;
     color: white;
-    h1, h2, h3, h4, h5, h6 {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         color: white;
     }
 
@@ -22,7 +28,8 @@
         background-color: #333;
     }
 
-    nav a, .dropbtn {
+    nav a,
+    .dropbtn {
         color: white;
     }
 
@@ -61,14 +68,18 @@ header button {
 
 header {
     display: grid;
-    grid-template-columns: 300px auto; /*Controls the relationship between the columns for the logo and the rest of the nav. Creates spacing between the logo and nav.*/
+    grid-template-columns: 300px auto;
+    /*Controls the relationship between the columns for the logo and the rest of the nav. Creates spacing between the logo and nav.*/
     margin-bottom: 50px;
 }
 
 .logo {
-    width: 250px; /*Controls image size*/
+    width: 250px;
+    /*Controls image size*/
     margin: 20px;
-} /****NEW PIECE****/
+}
+
+/****NEW PIECE****/
 
 
 .logo_link {
@@ -164,7 +175,13 @@ header button {
 
 
 /***Hero Image**/
-.outletheroimage img, .archeryheroimage img, .hamletheroimage img, .etsyheroimage img, .bankingheroimage img, .gcbookletheroimage img {
+.outletheroimage img,
+.archeryheroimage img,
+.hamletheroimage img,
+.etsyheroimage img,
+.bankingheroimage img,
+.gcbookletheroimage img,
+.idpackageheroimage img {
     width: 100%;
 }
 
@@ -185,34 +202,64 @@ h3 {
 
 
 /**Description text, client, and disciplines**/
-.outletoverviewtext, .gcbookletoverviewtext, .archeryoverviewtext, .etsyoverviewtext, .hamletoverviewtext, .bankingoverviewtext {
+.outletoverviewtext,
+.gcbookletoverviewtext,
+.archeryoverviewtext,
+.etsyoverviewtext,
+.hamletoverviewtext,
+.bankingoverviewtext,
+.idpackageoverviewtext {
     margin: 50px;
     display: flex;
 }
 
 /**Descriptive text beginning**/
-.outletdescription p, .gcbookletdescription p, .archerydescription p, .etsydescription p, .hamletdescription p, .bankingdescription p {
+.outletdescription p,
+.gcbookletdescription p,
+.archerydescription p,
+.etsydescription p,
+.hamletdescription p,
+.bankingdescription p,
+.idpackagedescription p {
     padding: 40px;
     margin-left: 200px;
     margin-right: 0px;
 }
 
 /**Client and Disciplines box**/
-.outletclientanddisciplines, .gcbookletclientanddisciplines, .archeryclientanddisciplines, .etsyclientanddisciplines, .hamletclientanddisciplines, .bankingclientanddisciplines {
+.outletclientanddisciplines,
+.gcbookletclientanddisciplines,
+.archeryclientanddisciplines,
+.etsyclientanddisciplines,
+.hamletclientanddisciplines,
+.bankingclientanddisciplines,
+.idpackageclientanddisciplines {
     padding: 30px;
     margin-left: -20px;
     margin-right: 200px;
 }
 
 /**Client and Disciplines paragraph text**/
-.outletclientanddisciplines p, .gcbookletclientanddisciplines p, .archeryclientanddisciplines p, .etsyclientanddisciplines p, .hamletclientanddisciplines p, .bankingclientanddisciplines p {
+.outletclientanddisciplines p,
+.gcbookletclientanddisciplines p,
+.archeryclientanddisciplines p,
+.etsyclientanddisciplines p,
+.hamletclientanddisciplines p,
+.bankingclientanddisciplines p,
+.idpackageclientanddisciplines p {
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 40px;
 }
 
 /**Client and Disciplines heading text**/
-.outletoverviewtext h3, .gcbookletoverviewtext h3, .archeryoverviewtext h3, .etsyoverviewtext h3, .hamletoverviewtext h3, .bankingoverviewtext h3 {
+.outletoverviewtext h3,
+.gcbookletoverviewtext h3,
+.archeryoverviewtext h3,
+.etsyoverviewtext h3,
+.hamletoverviewtext h3,
+.bankingoverviewtext h3,
+.idpackageoverviewtext h3 {
     margin-bottom: -40px;
 }
 
@@ -452,7 +499,8 @@ h1 {
 }
 
 
-.hamlettypecover img, .hamletimagecover img {
+.hamlettypecover img,
+.hamletimagecover img {
     width: 70%;
     height: auto;
     margin: auto;
@@ -487,7 +535,7 @@ h1 {
     margin-left: 0px;
 }
 
-.archery img{
+.archery img {
     display: flex;
     width: 80%;
     height: auto;
@@ -525,6 +573,30 @@ h1 {
     gap: 10px;
     justify-content: center;
 }
+
+
+/***********************Identity Package*********************/
+.idpackageoverviewtext h3 {
+    margin-left: 0px;
+}
+
+.idpackageimages {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.idpackage img,
+.idpackagepieces img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
 
 
 /***********Footer*******/
@@ -572,7 +644,7 @@ footer p a:hover {
     background: #007bb5;
     color: white;
     margin-right: 20px;
-  }
+}
 
 
 
@@ -589,7 +661,8 @@ footer p a:hover {
         margin-top: 20px;
     }
 
-    nav, .dropdown {
+    nav,
+    .dropdown {
         display: block;
         text-align: center;
     }
@@ -599,7 +672,7 @@ footer p a:hover {
         padding: 15px;
         text-align: center;
     }
-    
+
 
 
     nav {
@@ -635,7 +708,8 @@ footer p a:hover {
     }
 
 
-    p, h3 {
+    p,
+    h3 {
         margin-left: 0px;
         margin-right: 0px;
         padding: 40px;
@@ -652,18 +726,36 @@ footer p a:hover {
 
 
 
-    .outletdescription p, .gcbookletdescription p, .archerydescription p, .etsydescription p, .hamletdescription p, .bankingdescription p {
+    .outletdescription p,
+    .gcbookletdescription p,
+    .archerydescription p,
+    .etsydescription p,
+    .hamletdescription p,
+    .bankingdescription p,
+    .idpackagedescription p {
         margin-left: 0px;
         margin-bottom: 0px;
         padding-bottom: -40px;
     }
 
-    .outletoverviewtext, .gcbookletoverviewtext, .archeryoverviewtext, .etsyoverviewtext, .hamletoverviewtext, .bankingoverviewtext {
+    .outletoverviewtext,
+    .gcbookletoverviewtext,
+    .archeryoverviewtext,
+    .etsyoverviewtext,
+    .hamletoverviewtext,
+    .bankingoverviewtext,
+    .idpackageoverviewtext {
         display: block;
         margin: 0px;
     }
 
-    .outletclientanddisciplines, .gcbookletclientanddisciplines, .archeryclientanddisciplines, .etsyclientanddisciplines, .hamletclientanddisciplines, .bankingclientanddisciplines {
+    .outletclientanddisciplines,
+    .gcbookletclientanddisciplines,
+    .archeryclientanddisciplines,
+    .etsyclientanddisciplines,
+    .hamletclientanddisciplines,
+    .bankingclientanddisciplines,
+    .idpackageclientanddisciplines {
         margin-right: 0px;
         margin-left: 0px;
         padding: 0px;
@@ -674,7 +766,8 @@ footer p a:hover {
     .archeryclientanddisciplines p,
     .etsyclientanddisciplines p,
     .hamletclientanddisciplines p,
-    .bankingclientanddisciplines p {
+    .bankingclientanddisciplines p,
+    .idpackageclientanddisciplines p {
         padding-top: 0px;
         padding-bottom: 0px;
     }
@@ -684,7 +777,8 @@ footer p a:hover {
     .archeryclientanddisciplines h3,
     .etsyclientanddisciplines h3,
     .hamletclientanddisciplines h3,
-    .bankingclientanddisciplines h3 {
+    .bankingclientanddisciplines h3,
+    .idpackageclientanddisciplines h3 {
         padding-top: 0px;
         padding-bottom: 0px;
     }
@@ -747,7 +841,11 @@ footer p a:hover {
 
     /************Banking Website***********/
 
-    .bankingimages img, .archeryimages img, .etsyimages img, .hamletimages img, .gcbookletimages img {
+    .bankingimages img,
+    .archeryimages img,
+    .etsyimages img,
+    .hamletimages img,
+    .gcbookletimages img .idpackageimages img {
         width: 100%;
         height: auto;
     }
