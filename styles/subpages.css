@@ -588,13 +588,33 @@ h1 {
     justify-content: center;
 }
 
-.idpackage img,
-.idpackagepieces img {
-    width: 100%;
-    height: auto;
+.idpackage img {
+    padding: 20px;
 }
 
+.idpackage img,
+.idpackagepieces img {
+    width: 70%;
+    height: auto;
+    justify-content: center;
+}
 
+.envelopeimages {
+    display: flex;
+    height: auto;
+    padding: 20px;
+
+    img {
+        width: 70%;
+        height: auto;
+    }
+}
+
+.envelopsmallimages {
+    width: 50%;
+    height: auto;
+    padding: 20px;
+}
 
 
 
