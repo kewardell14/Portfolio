@@ -576,20 +576,21 @@ h1 {
 
 
 /***********************Identity Package*********************/
+#idpackage section {
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
 .idpackageoverviewtext h3 {
     margin-left: 0px;
 }
 
-.idpackageimages {
+#idpackage img {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-}
-
-.idpackage img {
-    padding: 20px;
 }
 
 .idpackage img,
@@ -599,23 +600,46 @@ h1 {
     justify-content: center;
 }
 
+.idpackagelogo img {
+    width: 80%;
+    height: auto;
+    padding: 0px;
+}
+
+.businesscardimages {
+    display: flex;
+
+    img {
+        width: 60%;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+
+
 .envelopeimages {
     display: flex;
     height: auto;
-    padding: 20px;
+    padding: 10px;
 
     img {
-        width: 70%;
+        width: 101%;
         height: auto;
     }
 }
 
-.envelopsmallimages {
-    width: 50%;
+.envelopesmallimages {
+    width: 56%;
     height: auto;
-    padding: 20px;
+    padding: 10px;
 }
 
+.styleguideimage img {
+    padding: 40px;
+    width: 70%;
+    height: auto;
+}
 
 
 
