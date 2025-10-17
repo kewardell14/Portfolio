@@ -70,7 +70,6 @@ header {
     display: grid;
     grid-template-columns: 300px auto;
     /*Controls the relationship between the columns for the logo and the rest of the nav. Creates spacing between the logo and nav.*/
-    margin-bottom: 50px;
 }
 
 .logo {
