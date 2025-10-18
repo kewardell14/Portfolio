@@ -584,6 +584,11 @@ h1 {
     margin-left: 0px;
 }
 
+#idpackage h2,
+#idpackage h1 {
+    color: #da1c5c;
+}
+
 #idpackage img {
     margin: auto;
     display: flex;
@@ -597,6 +602,21 @@ h1 {
     width: 70%;
     height: auto;
     justify-content: center;
+}
+
+.meetKennadee {
+    display: flex;
+}
+
+.Kennadeeinfo {
+    display: block;
+    padding: 30px;
+}
+
+.Kennadeeinfo h1,
+.Kennadeeinfo h2,
+.Kennadeeinfo p {
+    text-align: left;
 }
 
 .idpackagelogo img {
@@ -615,6 +635,11 @@ h1 {
     }
 }
 
+.fonts img,
+.colors img {
+    width: 100%;
+    height: auto;
+}
 
 
 .envelopeimages {
