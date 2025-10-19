@@ -576,8 +576,15 @@ h1 {
 
 /***********************Identity Package*********************/
 #idpackage section {
-    padding: 10px;
-    padding-bottom: 100px;
+    margin-bottom: 50px;
+}
+
+#idpackagepieces section {
+    margin-bottom: 200px;
+}
+
+.idpackageheroimage {
+    margin-bottom: 0px;
 }
 
 .idpackageoverviewtext h3 {
@@ -585,28 +592,29 @@ h1 {
 }
 
 #idpackage h2,
-#idpackage h1 {
+#idpackage h1,
+#idpackage h3 {
     color: #da1c5c;
 }
 
 #idpackage img {
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
 }
 
 .idpackage img,
 .idpackagepieces img {
-    width: 70%;
+    width: 100%;
     height: auto;
     justify-content: center;
 }
 
-.meetKennadee {
-    display: flex;
-}
+/*.meetKennadee h3 {
+    width: 50px;
+    height: 200px;
+}*/
 
 .Kennadeeinfo {
     display: block;
@@ -629,7 +637,7 @@ h1 {
     display: flex;
 
     img {
-        width: 60%;
+        width: 100%;
         height: auto;
         padding: 10px;
     }
@@ -638,7 +646,8 @@ h1 {
 .meetKennadee img,
 .fonts img,
 .colors img,
-.patterns img {
+.patterns img,
+.invoice img {
     width: 100%;
     height: auto;
 }
@@ -648,27 +657,36 @@ h1 {
     height: auto;
 }
 
+.idpackage h3 {
+    margin-top: 100px;
 
-.envelopeimages {
-    display: flex;
-    height: auto;
-    padding: 10px;
-
-    img {
-        width: 101%;
-        height: auto;
+    a {
+        color: #da1c5c;
     }
 }
 
-.envelopesmallimages {
-    width: 56%;
+
+
+.envelope,
+.styleguide {
+    display: flex;
+}
+
+.envelope img {
+    width: 100%;
     height: auto;
     padding: 10px;
 }
 
-.styleguideimage img {
-    padding: 40px;
-    width: 70%;
+
+.styleguide img {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
+#crayonAttributes {
+    width: 107%;
     height: auto;
 }
 
@@ -920,11 +938,22 @@ footer p a:hover {
     .archeryimages img,
     .etsyimages img,
     .hamletimages img,
-    .gcbookletimages img .idpackageimages img {
+    .gcbookletimages img,
+    .idpackageimages img {
         width: 100%;
         height: auto;
     }
 
+
+    /**********************Identity Package*****************/
+
+    #idpackage section {
+        display: block;
+        margin: 40px;
+    }
+
+
+    /********************Footer*************************/
 
     footer {
         display: block;
