@@ -577,7 +577,7 @@ h1 {
 /***********************Identity Package*********************/
 #idpackage section {
     padding: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 .idpackageoverviewtext h3 {
@@ -635,8 +635,15 @@ h1 {
     }
 }
 
+.meetKennadee img,
 .fonts img,
-.colors img {
+.colors img,
+.patterns img {
+    width: 100%;
+    height: auto;
+}
+
+.crayonName img {
     width: 100%;
     height: auto;
 }
