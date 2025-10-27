@@ -692,6 +692,35 @@ h1 {
 
 
 
+/********************* Menu ****************/
+
+#menu h3,
+.menuProcess h3 a {
+    color: #553615;
+}
+
+/*
+#menu section {
+    margin-bottom: 200px;
+}*/
+
+.menuclientanddisciplines {
+    padding: 30px;
+    margin-left: -20px;
+    margin-right: 200px;
+}
+
+#menu img {
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+
+
+
 /***********Footer*******/
 
 footer {
