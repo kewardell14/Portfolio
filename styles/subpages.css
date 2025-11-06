@@ -718,6 +718,23 @@ h1 {
 }
 
 
+/********************Mammoth*********************/
+
+#mammothpieces section {
+    margin-bottom: 200px;
+}
+
+#mammoth img {
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.logo_black {
+    width: 30%;
+    height: auto;
+}
+
 
 
 
