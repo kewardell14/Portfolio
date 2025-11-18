@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Banking Website</title>
     <link rel="stylesheet" href="styles/subpages.css">
-    <script src="portfolio.js" type="module"></script>
+    <script src="js/portfolio.js" type="module"></script>
     <link rel="icon" type="image/x-icon" href="images/Portfolio Logo smaller background.png">
 </head>
 
@@ -18,36 +18,57 @@
         </a>
         <nav>
             <a href="index.html">Home</a>
-            <a href="outlet.html">Outlet</a>
-            <a href="banking.html">Banking Website</a>
-            <div class="dropdown">
-                <button class="dropbtn">Booklets</button>
-                <div class="dropdown-content">
-                    <a href="hamlet.html">Hamlet Book Covers</a>
-                    <a href="gcbooklet.html">General Conference Booklet</a>
-                </div>
-            </div>
+
             <div class="dropdown">
                 <button class="dropbtn">Branding</button>
                 <div class="dropdown-content">
                     <a href="identitypackage.html">Identity Package</a>
+                    <a href="mammoth.html">The Mammoth Site</a>
                     <a href="menu.html">Anthos Menu</a>
-                    <a href="archery.html">Minor Adjustments Archery</a>
                 </div>
             </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">UX/UI</button>
+                <div class="dropdown-content">
+                    <!--Mother 3 Project-->
+                    <a href="banking.html">Banking Website</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Booklets</button>
+                <div class="dropdown-content">
+                    <a href="outlet.html">Outlet Publication</a>
+                    <a href="hamlet.html">Hamlet Book Covers</a>
+                    <a href="gcbooklet.html">General Conference Booklet</a>
+                </div>
+            </div>
+
+            <a href="about.html">About</a>
+
+            <!--<div class="custom-select">
+                <select id="theme-select">
+                    <option value="light" data-icon="images/sun.png">Light</option>
+                    <option value="dark" data-icon="images/moon.png">Dark</option>
+                </select>
+            </div>-->
+
+
             <select>
                 <option value="light">Light</option>
                 <option value="dark">Dark</option>
             </select>
+
         </nav>
     </header>
 
     <div id="banking">
-        <section class="bankingheroimage">
+        <section class="heroimage">
             <img src="images/banking/Hero Image for Banking Website.jpg" alt="Banking Hero Image">
         </section>
-        <section class="bankingoverviewtext">
-            <section class="bankingdescription">
+        <section class="overviewtext">
+            <section class="description">
                 <p>
                     Design a new home page and personal dashboard to be less intimidating and more task-oriented instead
                     of
@@ -55,7 +76,7 @@
                     user-oriented.
                 </p>
             </section>
-            <section class="bankingclientanddisciplines">
+            <section class="clientanddisciplines">
                 <h3>
                     Client:
                 </h3>
@@ -70,22 +91,24 @@
                 </p>
             </section>
         </section>
-        <section class="bankingimages">
-            <img src="images/banking/Laptop Home Screen.jpg" alt="Banking Home Mockup">
-            <img src="images/banking/Laptop Login.jpg" alt="Banking Login Mockup">
-            <img src="images/banking/Laptop Dashboard.jpg" alt="Banking Dashboard Mockup">
-            <img src="images/banking/Mobile Opening Screen.jpg" alt="Banking App Cover Mockup">
-            <img src="images/banking/Mobile Login and Home.jpg" alt="Banking App Home Mockup">
-            <img src="images/banking/Mobile Dashboard.jpg" alt="Banking App Dashboard Mockup">
+        <section id="main">
+            <section class="bankingimages">
+                <img src="images/banking/Laptop Home Screen.jpg" alt="Banking Home Mockup">
+                <img src="images/banking/Laptop Login.jpg" alt="Banking Login Mockup">
+                <img src="images/banking/Laptop Dashboard.jpg" alt="Banking Dashboard Mockup">
+                <img src="images/banking/Mobile Opening Screen.jpg" alt="Banking App Cover Mockup">
+                <img src="images/banking/Mobile Login and Home.jpg" alt="Banking App Home Mockup">
+                <img src="images/banking/Mobile Dashboard.jpg" alt="Banking App Dashboard Mockup">
+            </section>
+            <p>
+                This project, in addition to concentrating on creating a user-focused design for both a main screen and
+                dashboard, allowed me to
+                create a mobile version of the website that helped me focus on spacing and emphasis. I also focused on
+                creating a dark mode that would work for both the web and mobile website.
+            </p>
+            <p><a href="https://katelynwardellportfolio.framer.website/banking" target="_blank" class="process">Banking
+                    Website Case Study</a></p>
         </section>
-        <p>
-            This project, in addition to concentrating on creating a user-focused design for both a main screen and
-            dashboard, allowed me to
-            create a mobile version of the website that helped me focus on spacing and emphasis. I also focused on
-            creating a dark mode that would work for both the web and mobile website.
-        </p>
-        <p><a href="https://katelynwardellportfolio.framer.website/banking" target="_blank" class="process">Banking
-                Website Case Study</a></p>
     </div>
 
     <footer>

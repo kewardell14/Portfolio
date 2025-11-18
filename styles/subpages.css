@@ -7,164 +7,19 @@
   --accent4-color: white;
   *****/
 
+@import "layout.css";
+@import "footer.css";
 
-
-/*****Navigation*****/
-
-.dark {
-    background-color: #333;
-    color: white;
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: white;
-    }
-
-    nav {
-        background-color: #333;
-    }
-
-    nav a,
-    .dropbtn {
-        color: white;
-    }
-
-    .dropdown-content a:hover {
-        background-color: #788BFF;
-        color: white;
-    }
-
-    .dropdown-content a {
-        background-color: white;
-        color: #788BFF
-    }
-
+:root {
+    --cyan: #00FFFF;
+    --white: #ffffff;
+    --black: #000000;
+    /*--tan: #F2DEA0;
+    --darker-tan: #D9BD89;
+    --gray: #A6977B;*/
+    /*--header-font: "Connemara Old Style Light", serif;*/
 }
 
-select {
-    width: 100px;
-    height: 70px;
-    padding: 20px;
-    background: #AF3E4D;
-    font-family: 'Lora';
-    font-size: 16px;
-    color: white;
-}
-
-
-.hide {
-    display: none;
-}
-
-header button {
-    background: none;
-    stroke: none;
-}
-
-
-header {
-    display: grid;
-    grid-template-columns: 300px auto;
-    /*Controls the relationship between the columns for the logo and the rest of the nav. Creates spacing between the logo and nav.*/
-}
-
-.logo {
-    width: 250px;
-    /*Controls image size*/
-    margin: 20px;
-}
-
-/****NEW PIECE****/
-
-
-.logo_link {
-    justify-self: center;
-    align-self: center;
-}
-
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-nav a {
-    text-align: center;
-    color: #153243;
-    text-decoration: none;
-    padding: 20px;
-}
-
-nav a:hover {
-    background-color: #788BFF;
-    color: white;
-}
-
-
-header button {
-    background: none;
-    box-shadow: none;
-    font-family: "Lora";
-}
-
-/* Style The Dropdown Button */
-.dropbtn {
-    color: #153243;
-    padding: 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: #153243;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #788BFF;
-    color: white;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-    background-color: #788BFF;
-    color: white;
-}
-
-
-
-/**************** General Styles/Hero Images and Intro ****************/
 
 /***Process Book and Case Study Links********/
 .process {
@@ -172,204 +27,7 @@ header button {
 }
 
 
-
-/***Hero Image**/
-.outletheroimage img,
-.archeryheroimage img,
-.hamletheroimage img,
-.etsyheroimage img,
-.bankingheroimage img,
-.gcbookletheroimage img,
-.idpackageheroimage img {
-    width: 100%;
-}
-
-/**H3**/
-
-p {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    margin-left: 300px;
-    margin-right: 300px;
-}
-
-h3 {
-    color: #153243;
-    margin-bottom: -20px;
-    margin-left: 300px;
-}
-
-
-/**Description text, client, and disciplines**/
-.outletoverviewtext,
-.gcbookletoverviewtext,
-.archeryoverviewtext,
-.etsyoverviewtext,
-.hamletoverviewtext,
-.bankingoverviewtext,
-.idpackageoverviewtext {
-    margin: 50px;
-    display: flex;
-}
-
-/**Descriptive text beginning**/
-.outletdescription p,
-.gcbookletdescription p,
-.archerydescription p,
-.etsydescription p,
-.hamletdescription p,
-.bankingdescription p,
-.idpackagedescription p {
-    padding: 40px;
-    margin-left: 200px;
-    margin-right: 0px;
-}
-
-/**Client and Disciplines box**/
-.outletclientanddisciplines,
-.gcbookletclientanddisciplines,
-.archeryclientanddisciplines,
-.etsyclientanddisciplines,
-.hamletclientanddisciplines,
-.bankingclientanddisciplines,
-.idpackageclientanddisciplines {
-    padding: 30px;
-    margin-left: -20px;
-    margin-right: 200px;
-}
-
-/**Client and Disciplines paragraph text**/
-.outletclientanddisciplines p,
-.gcbookletclientanddisciplines p,
-.archeryclientanddisciplines p,
-.etsyclientanddisciplines p,
-.hamletclientanddisciplines p,
-.bankingclientanddisciplines p,
-.idpackageclientanddisciplines p {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 40px;
-}
-
-/**Client and Disciplines heading text**/
-.outletoverviewtext h3,
-.gcbookletoverviewtext h3,
-.archeryoverviewtext h3,
-.etsyoverviewtext h3,
-.hamletoverviewtext h3,
-.bankingoverviewtext h3,
-.idpackageoverviewtext h3 {
-    margin-bottom: -40px;
-}
-
-
-/******************Home*********************/
-
-/***********Bio*******/
-
-
-#bio {
-    display: grid;
-    grid-template-columns: 10;
-    grid-template-rows: 10;
-}
-
-
-.profile {
-    margin: 20px 0px;
-    border-radius: 15px;
-    width: 80%;
-    grid-column: 2 / 5;
-    grid-row: 6 / 9;
-    box-shadow: 5px 5px 10px #6f7364;
-    margin: 100px;
-    z-index: -1;
-}
-
-.msg {
-    background-color: white;
-    line-height: 1.5em;
-    /*margin: 20px 0px;*/
-    padding: 45px;
-    /*color: black; not necessary, I believe.*/
-    grid-column: 5 / 9;
-    grid-row: 7 / 7;
-    box-shadow: 5px 5px 10px #6f7364;
-    border-radius: 25px;
-    margin-right: 200px;
-    margin-left: -100px;
-}
-
-.msg p {
-    color: #153243;
-    font-family: "Lato";
-    font-size: .9em;
-    margin: 0px;
-    margin-right: 20px;
-}
-
-.msg h2 {
-    color: #AF3E4D;
-    font-family: "Satisfy";
-}
-
-
-
-h1 {
-    text-align: center;
-    padding-top: 100px;
-    margin-bottom: -70px;
-    color: #113B51;
-}
-
-
-#gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 40px;
-    padding: 100px;
-}
-
-.grid-item {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.grid-item-y {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-
-#gallery img {
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    align-content: center;
-    object-fit: contain;
-}
-
-#gallery img:hover {
-    opacity: 0.5;
-}
-
-
 /*************************Outlet***************************/
-
-.outletoverviewtext h3 {
-    margin-left: 0px;
-}
-
 .outletcovers {
     text-align: center;
     margin: 30px;
@@ -467,15 +125,10 @@ h1 {
     padding: 10px;
 }
 
+
+
 /***************Banking Website************/
 
-.bankingheroimage img {
-    width: 100%;
-}
-
-.bankingoverviewtext h3 {
-    margin-left: 0px;
-}
 
 .bankingimages {
     margin: auto;
@@ -493,11 +146,6 @@ h1 {
 
 /****************Hamlet Style**************/
 
-.hamletoverviewtext h3 {
-    margin-left: 0px;
-}
-
-
 .hamlettypecover img,
 .hamletimagecover img {
     width: 70%;
@@ -510,9 +158,6 @@ h1 {
 
 /****************GC Booklet****************/
 
-.gcbookletoverviewtext h3 {
-    margin-left: 0px;
-}
 
 .gcbookletimages {
     margin: auto;
@@ -529,10 +174,8 @@ h1 {
 
 
 /****************Archery Logo Style****************/
+/*
 
-.archeryoverviewtext h3 {
-    margin-left: 0px;
-}
 
 .archery img {
     display: flex;
@@ -554,9 +197,9 @@ h1 {
     margin: 30px;
 }
 
-
+*/
 /***************Etsy Shop Logo********************/
-
+/*
 .etsyheroimage img {
     width: 100%;
 }
@@ -573,29 +216,20 @@ h1 {
     justify-content: center;
 }
 
-
+*/
 /***********************Identity Package*********************/
-#idpackage section {
+/*#idpackage section {
     margin-bottom: 50px;
-}
+}*/
 
-#idpackagepieces section {
-    margin-bottom: 200px;
-}
 
-.idpackageheroimage {
-    margin-bottom: 0px;
-}
-
-.idpackageoverviewtext h3 {
-    margin-left: 0px;
-}
-
+/*changes the color of the h3s*/
 #idpackage h2,
 #idpackage h1,
 #idpackage h3 {
     color: #da1c5c;
 }
+
 
 #idpackage img {
     margin: auto;
@@ -610,11 +244,6 @@ h1 {
     height: auto;
     justify-content: center;
 }
-
-/*.meetKennadee h3 {
-    width: 50px;
-    height: 200px;
-}*/
 
 .Kennadeeinfo {
     display: block;
@@ -704,11 +333,6 @@ h1 {
     margin-bottom: 200px;
 }*/
 
-.menuclientanddisciplines {
-    padding: 30px;
-    margin-left: -20px;
-    margin-right: 200px;
-}
 
 #menu img {
     margin: auto;
@@ -720,71 +344,28 @@ h1 {
 
 /********************Mammoth*********************/
 
-#mammothpieces section {
-    margin-bottom: 200px;
-}
-
+/*
 #mammoth img {
     margin: auto;
     width: 100%;
     height: auto;
 }
+*/
 
-.logo_black {
+#logo_black {
     width: 30%;
     height: auto;
 }
 
-
-
-
-/***********Footer*******/
-
-footer {
-    background-color: #B4B8AB;
-    color: #113B51;
-    margin-top: 200px;
-    padding: 10px 10px;
-    display: flex;
-    justify-content: space-around;
-    font-family: "Lora", Verdana, Geneva, Tahoma, sans-serif;
-    align-items: center;
-}
-
-footer a {
-    color: #113B51;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: white;
-}
-
-footer p {
-    font-size: 1em;
-    margin: 20px;
-}
-
-footer p a:hover {
-    text-decoration: underline;
-}
-
-.social {
+#main .kids-kit img {
+    width: 50%;
     height: auto;
 }
 
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    text-decoration: none;
-    background: #007bb5;
-    color: white;
-    margin-right: 20px;
+.kids-kit {
+    /*display: inline-flex;*/
+    gap: 10px;
 }
-
 
 
 
@@ -792,12 +373,18 @@ footer p a:hover {
     header {
         display: block;
         text-align: center;
+        margin-bottom: 5em;
     }
 
     .logo {
         margin: auto;
         margin: 0px;
         margin-top: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
     }
 
     nav,
@@ -810,13 +397,6 @@ footer p a:hover {
         display: block;
         padding: 15px;
         text-align: center;
-    }
-
-
-
-    nav {
-        flex-direction: column;
-        align-items: center;
     }
 
     .dropdown-content {
@@ -832,8 +412,6 @@ footer p a:hover {
     }
 
 
-
-
     .dropbtn {
         padding: 15px;
     }
@@ -846,80 +424,30 @@ footer p a:hover {
         margin-top: 25px;
     }
 
-
-    p,
-    h3 {
-        margin-left: 0px;
-        margin-right: 0px;
-        padding: 40px;
+    .overviewtext {
+        margin: 0;
+        display: block;
     }
 
-    h3 {
-        margin-bottom: -110px;
+    .clientanddisciplines {
+        padding-top: 0px;
+        padding-bottom: 100px;
     }
 
-    img {
+    #main {
+        display: block;
+        margin: 1em;
+    }
+
+    #main section {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    main img {
+        display: block;
         width: 100%;
         height: auto;
-    }
-
-
-
-    .outletdescription p,
-    .gcbookletdescription p,
-    .archerydescription p,
-    .etsydescription p,
-    .hamletdescription p,
-    .bankingdescription p,
-    .idpackagedescription p {
-        margin-left: 0px;
-        margin-bottom: 0px;
-        padding-bottom: -40px;
-    }
-
-    .outletoverviewtext,
-    .gcbookletoverviewtext,
-    .archeryoverviewtext,
-    .etsyoverviewtext,
-    .hamletoverviewtext,
-    .bankingoverviewtext,
-    .idpackageoverviewtext {
-        display: block;
-        margin: 0px;
-    }
-
-    .outletclientanddisciplines,
-    .gcbookletclientanddisciplines,
-    .archeryclientanddisciplines,
-    .etsyclientanddisciplines,
-    .hamletclientanddisciplines,
-    .bankingclientanddisciplines,
-    .idpackageclientanddisciplines {
-        margin-right: 0px;
-        margin-left: 0px;
-        padding: 0px;
-    }
-
-    .outletclientanddisciplines p,
-    .gcbookletclientanddisciplines p,
-    .archeryclientanddisciplines p,
-    .etsyclientanddisciplines p,
-    .hamletclientanddisciplines p,
-    .bankingclientanddisciplines p,
-    .idpackageclientanddisciplines p {
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-
-    .outletclientanddisciplines h3,
-    .gcbookletclientanddisciplines h3,
-    .archeryclientanddisciplines h3,
-    .etsyclientanddisciplines h3,
-    .hamletclientanddisciplines h3,
-    .bankingclientanddisciplines h3,
-    .idpackageclientanddisciplines h3 {
-        padding-top: 0px;
-        padding-bottom: 0px;
     }
 
 
@@ -968,7 +496,7 @@ footer p a:hover {
 
 
     /********Outlet*****/
-
+    /*
     .outletspreads {
         display: inline-block
     }
@@ -977,6 +505,7 @@ footer p a:hover {
         width: 90%;
         height: auto;
     }
+    */
 
     /************Banking Website***********/
 
@@ -992,11 +521,12 @@ footer p a:hover {
 
 
     /**********************Identity Package*****************/
-
+    /*
     #idpackage section {
         display: block;
         margin: 40px;
     }
+        */
 
 
     /********************Footer*************************/

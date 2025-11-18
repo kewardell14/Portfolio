@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Hamlet Book Covers</title>
   <link rel="stylesheet" href="styles/subpages.css">
-  <script src="portfolio.js" type="module"></script>
+  <script src="js/portfolio.js" type="module"></script>
   <link rel="icon" type="image/x-icon" href="images/Portfolio Logo smaller background.png">
 </head>
 
@@ -18,36 +18,54 @@
     </a>
     <nav>
       <a href="index.html">Home</a>
-      <a href="outlet.html">Outlet</a>
-      <a href="banking.html">Banking Website</a>
-      <div class="dropdown">
-        <button class="dropbtn">Booklets</button>
-        <div class="dropdown-content">
-          <a href="hamlet.html">Hamlet Book Covers</a>
-          <a href="gcbooklet.html">General Conference Booklet</a>
-        </div>
-      </div>
+
       <div class="dropdown">
         <button class="dropbtn">Branding</button>
         <div class="dropdown-content">
           <a href="identitypackage.html">Identity Package</a>
+          <a href="mammoth.html">The Mammoth Site</a>
           <a href="menu.html">Anthos Menu</a>
-          <a href="archery.html">Minor Adjustments Archery</a>
         </div>
       </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">UX/UI</button>
+        <div class="dropdown-content">
+          <!--Mother 3 Project-->
+          <a href="banking.html">Banking Website</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Booklets</button>
+        <div class="dropdown-content">
+          <a href="outlet.html">Outlet Publication</a>
+          <a href="hamlet.html">Hamlet Book Covers</a>
+          <a href="gcbooklet.html">General Conference Booklet</a>
+        </div>
+      </div>
+
+      <a href="about.html">About</a>
+      <!--<div class="custom-select">
+              <select id="theme-select">
+                  <option value="light" data-icon="images/sun.png">Light</option>
+                  <option value="dark" data-icon="images/moon.png">Dark</option>
+              </select>
+          </div>-->
       <select>
         <option value="light">Light</option>
         <option value="dark">Dark</option>
       </select>
+
     </nav>
   </header>
 
   <div id="hamlet">
-    <section class="hamletheroimage">
+    <section class="heroimage">
       <img src="images/hamlet/Hero Image for Hamlet Book Covers.jpg" alt="Hamlet Book Cover Hero Image">
     </section>
-    <section class="hamletoverviewtext">
-      <section class="hamletdescription">
+    <section class="overviewtext">
+      <section class="description">
         <p>
           To celebrate the most influential authors and books of all time, the Library of Congress is hosting an exhibit
           that will
@@ -65,7 +83,7 @@
           using type, and the other focused on imagery.
         </p>
       </section>
-      <section class="hamletclientanddisciplines">
+      <section class="clientanddisciplines">
         <h3>
           Client:
         </h3>
@@ -80,34 +98,36 @@
         </p>
       </section>
     </section>
-
-    <section class="hamlettypecover">
-      <section class="hamlettypedesign">
-        <img src="images/hamlet/Hamlet Type Cover Mockup velvet.jpg" alt="Hamlet Type Book Cover">
+    <section id="main">
+      <section class="hamlettypecover">
+        <section class="hamlettypedesign">
+          <img src="images/hamlet/Hamlet Type Cover Mockup velvet.jpg" alt="Hamlet Type Book Cover">
+        </section>
+        <h3>
+          Type Book Cover
+        </h3>
+        <p>
+          This design was constructed purely out of type. The fading effect serves a dual purpose as it alludes to the
+          ghost of
+          Hamlet's father, as well as the existential crisis that befalls Hamlet summarized in the classic line, "to be
+          or
+          not to be."
+        </p>
       </section>
-      <h3>
-        Type Book Cover
-      </h3>
-      <p>
-        This design was constructed purely out of type. The fading effect serves a dual purpose as it alludes to the
-        ghost of
-        Hamlet's father, as well as the existential crisis that befalls Hamlet summarized in the classic line, "to be or
-        not to be."
-      </p>
-    </section>
 
-    <section class="hamletimagecover">
-      <section class="hamletimagedesign">
-        <img src="images/hamlet/Hamlet Image Cover Mockup.jpg" alt="Hamlet Type Book Cover Mockup">
+      <section class="hamletimagecover">
+        <section class="hamletimagedesign">
+          <img src="images/hamlet/Hamlet Image Cover Mockup.jpg" alt="Hamlet Type Book Cover Mockup">
+        </section>
+        <h3>
+          Image Book Cover
+        </h3>
+        <p>
+          This design demonstrates the duality of Hamlet's behaviors as sane and insane. The king chess piece in the
+          middle represents the metaphorical game of chess, wits, deceit, and manipulation that is experienced by
+          characters in Hamlet, which lead consistently drive the plot forward.
+        </p>
       </section>
-      <h3>
-        Image Book Cover
-      </h3>
-      <p>
-        This design demonstrates the duality of Hamlet's behaviors as sane and insane. The king chess piece in the
-        middle represents the metaphorical game of chess, wits, deceit, and manipulation that is experienced by
-        characters in Hamlet, which lead consistently drive the plot forward.
-      </p>
     </section>
   </div>
 
