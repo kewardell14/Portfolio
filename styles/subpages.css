@@ -197,24 +197,6 @@
     margin: 30px;
 }
 
-*/
-/***************Etsy Shop Logo********************/
-/*
-.etsyheroimage img {
-    width: 100%;
-}
-
-.etsyoverviewtext h3 {
-    margin-left: 0px;
-}
-
-.etsyimages {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
 
 */
 /***********************Identity Package*********************/
@@ -352,18 +334,23 @@
 }
 */
 
-#logo_black {
-    width: 30%;
+
+
+
+#main .kids-kit-booklet img {
+    width: 32%;
     height: auto;
 }
 
-#main .kids-kit img {
-    width: 50%;
-    height: auto;
+.kids-kit-booklet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-.kids-kit {
-    /*display: inline-flex;*/
+#mammothpieces .merch {
+    display: flex;
     gap: 10px;
 }
 
