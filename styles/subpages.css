@@ -334,7 +334,22 @@
 }
 */
 
+.pictoral-logos {
+    display: flex;
+}
 
+.pictoral-logos img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding-right: 100px;
+}
+
+
+#mammoth #pictoral-motion {
+    width: 50%;
+    height: auto;
+}
 
 
 #main .kids-kit-booklet img {
