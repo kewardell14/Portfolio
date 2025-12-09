@@ -9,20 +9,28 @@
 
 
 
+/******* Superseded *******/
+
+
 /*****Navigation*****/
 
 header {
     display: grid;
-    grid-template-columns: 300px auto; /*Controls the relationship between the columns for the logo and the rest of the nav. Creates spacing between the logo and nav.*/
+    grid-template-columns: 300px auto;
+    /*Controls the relationship between the columns for the logo and the rest of the nav. Creates spacing between the logo and nav.*/
     background-color: white;
-    box-shadow: 10px; /*Haven't figured out how to make this work*/
+    box-shadow: 10px;
+    /*Haven't figured out how to make this work*/
     margin-bottom: 50px;
 }
 
 .logo {
-    width: 250px; /*Controls image size*/
+    width: 250px;
+    /*Controls image size*/
     margin: 20px;
-} /****NEW PIECE****/
+}
+
+/****NEW PIECE****/
 
 
 .logo_link {
@@ -65,7 +73,7 @@ nav a:hover {
     grid-row: 1 / 5;
 }
 
-.archery img{
+.archery img {
     display: flex;
     width: 80%;
     height: auto;
@@ -116,7 +124,8 @@ nav a:hover {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 6 / 10;
     grid-row: 6 / 10;
-    column-gap: 20px; /* Gives me a gap between columns I think*/
+    column-gap: 20px;
+    /* Gives me a gap between columns I think*/
 }
 
 .khssoftware .khssoftwareimage-container {
@@ -190,9 +199,4 @@ footer p a:hover {
     background: #007bb5;
     color: white;
     margin-right: 20px;
-  }
-
-
-
-
-
+}

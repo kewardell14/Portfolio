@@ -1,0 +1,51 @@
+/********************Mammoth*********************/
+
+#mammoth {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: rgb(168, 61, 47);
+        font-family: "urbane-rounded", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+}
+
+
+.pictoral-logos {
+    display: flex;
+    justify-content: center;
+}
+
+#mammoth #pictoral-motion {
+    width: 40%;
+    height: auto;
+    align-content: center;
+}
+
+#kids-kit-box {
+    margin-bottom: 150px;
+}
+
+
+#main .kids-kit-booklet img {
+    width: 32%;
+    height: auto;
+}
+
+.kids-kit-booklet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#mammothpieces .merch {
+    display: flex;
+    gap: 10px;
+}

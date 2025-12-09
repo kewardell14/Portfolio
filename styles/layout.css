@@ -193,8 +193,13 @@ h3 {
 }
 
 /**Descriptive text beginning**/
+.description {
+    padding: 60px;
+    padding-top: 30px;
+}
+
 .description p {
-    padding: 40px;
+    padding-top: 1em;
 }
 
 /**Client and Disciplines box**/
