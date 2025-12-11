@@ -1,8 +1,7 @@
 /***********Footer*******/
 
 footer {
-    background-color: #B4B8AB;
-    color: #113B51;
+    color: #00aeef;
     margin-top: 200px;
     padding: 10px 10px;
     display: flex;
@@ -12,7 +11,7 @@ footer {
 }
 
 footer a {
-    color: #113B51;
+    color: #00aeef;
     text-decoration: none;
 }
 
