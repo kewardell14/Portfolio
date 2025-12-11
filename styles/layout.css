@@ -2,10 +2,11 @@
     --cyan: #00aeef;
     --white: #ffffff;
     --black: #000000;
-    /*--tan: #F2DEA0;
+    --header-font:
+        /*--tan: #F2DEA0;
     --darker-tan: #D9BD89;
     --gray: #A6977B;*/
-    /*--header-font: "Connemara Old Style Light", serif;*/
+        /*--header-font: "Connemara Old Style Light", serif;*/
 }
 
 
@@ -23,6 +24,9 @@
     h5,
     h6 {
         color: white;
+        font-family: "itc-avant-garde-gothic-pro", sans-serif;
+        font-weight: 700;
+        font-style: normal;
     }
 
 
@@ -33,13 +37,13 @@
     }
 
     .dropdown-content a:hover {
-        background-color: #788BFF;
-        color: white;
+        background-color: white;
+        color: var(--cyan);
     }
 
     .dropdown-content a {
-        background-color: white;
-        color: #788BFF
+        background-color: var(--cyan);
+        color: white;
     }
 
 }
@@ -95,6 +99,9 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 20px;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 nav a:hover {
@@ -106,7 +113,9 @@ nav a:hover {
 header button {
     background: none;
     box-shadow: none;
-    font-family: "Lora";
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 /* Style The Dropdown Button */
@@ -140,6 +149,9 @@ header button {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 /* Change color of dropdown links on hover */
@@ -181,6 +193,9 @@ header button {
 h3 {
     color: #153243;
     margin-bottom: -20px;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 

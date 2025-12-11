@@ -19,7 +19,7 @@ function rendergallery(homegallery) { //Displays the gallery
 }
 
 
-
+/* Had to hide while light and dark mode was not being used.
 const themeSelector = document.querySelector("select") // replace with code to select dropdown element out of the HTML (Hint: document.querySelector)
 function changeTheme() {
     const selectedTheme = themeSelector.value;
@@ -34,7 +34,7 @@ function changeTheme() {
     }
 }
 themeSelector.addEventListener('change', changeTheme);
-
+*/
 
 rendergallery(homegallery)
 
