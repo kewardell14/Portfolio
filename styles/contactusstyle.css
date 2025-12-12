@@ -1,49 +1,56 @@
-h1 {
-    color: #00aeef;
-    font-family: "itc-avant-garde-gothic-pro", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    margin-bottom: 50px;
+#contact-form {
+    h1 {
+        color: #00aeef;
+        font-family: "itc-avant-garde-gothic-pro", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        margin-bottom: 50px;
+    }
+
+    form {
+        color: #153243;
+        background-color: white;
+        border-radius: 30px;
+    }
+
+    input {
+        background-color: #00aeef;
+        color: white;
+    }
+
+    label {
+        font-size: large;
+        font-family: "itc-avant-garde-gothic-pro", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    button {
+        background-color: #00aeef;
+        color: white;
+        padding: 10px;
+        font-family: "itc-avant-garde-gothic-pro", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        border-radius: 15px;
+    }
+
+    #name {
+        display: flex;
+        gap: 30px;
+    }
+
+    #subject {
+        width: 400px;
+        height: 150px;
+    }
 }
 
-form {
-    color: #153243;
-    background-color: white;
-    border-radius: 30px;
-}
-
-input {
-    background-color: #00aeef;
-    color: white;
-}
-
-label {
-    font-size: large;
-    font-family: "itc-avant-garde-gothic-pro", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-button {
-    background-color: #00aeef;
-    color: white;
-    padding: 10px;
-    font-family: "itc-avant-garde-gothic-pro", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    border-radius: 15px;
-}
-
-body {
+main {
     margin: 100px;
 }
 
 #name {
     display: flex;
     gap: 30px;
-}
-
-#subject {
-    width: 400px;
-    height: 150px;
 }

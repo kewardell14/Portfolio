@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/contactusstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Document</title>
+    <title>Contact</title>
     <script>
         function handleSubmit(event) {
             event.preventDefault();
@@ -21,28 +22,81 @@
 
             alert('First Name: ${firstName}');
         }
+
     </script>
 </head>
 
 <body>
-    <!--Collect their first name, last name, email, phone number, gender, subscribe, updates, dropdown music genre, and submit-->
-    <h1>Contact Me</h1>
-    <form onsubmit="handleSubmit(event)">
-        <div id="name">
-            <div id="firstname">
-                <label for="firstName">First Name: </label>
-                <input type="text" id="firstName" name="firstName" required>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo-white.png" alt="Portfolio Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Branding</button>
+                <div class="dropdown-content">
+                    <a href="identitypackage.html">Identity Package</a>
+                    <a href="mammoth.html">The Mammoth Site</a>
+                    <a href="nepalAirlines.html">Nepal Airlines Website</a>
+                    <a href="menu.html">Anthos Menu</a>
+                </div>
             </div>
-            <div id="lastname">
-                <label for="lastName">Last Name: </label>
-                <input type="text" id="lastName" name="lastName" required>
+
+            <div class="dropdown">
+                <button class="dropbtn">UX/UI</button>
+                <div class="dropdown-content">
+                    <!--Mother 3 Project-->
+                    <a href="banking.html">Banking Website</a>
+                </div>
             </div>
-        </div>
-        <br><br>
-        <label for="email">Email: </label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
-        <!--<label for="country">Country: </label>
+
+            <div class="dropdown">
+                <button class="dropbtn">Booklets</button>
+                <div class="dropdown-content">
+                    <a href="outlet.html">Outlet Publication</a>
+                    <a href="hamlet.html">Hamlet Book Covers</a>
+                    <a href="gcbooklet.html">General Conference Booklet</a>
+                </div>
+            </div>
+
+            <a href="about.html">About</a>
+
+            <!--<div class="custom-select">
+                <select id="theme-select">
+                    <option value="light" data-icon="images/sun.png">Light</option>
+                    <option value="dark" data-icon="images/moon.png">Dark</option>
+                </select>
+            </div>-->
+
+            <!-- what I am currently using
+            <select>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>-->
+        </nav>
+    </header>
+    <main>
+        <div id="contact-form">
+            <!--Collect their first name, last name, email, phone number, gender, subscribe, updates, dropdown music genre, and submit-->
+            <h1>Contact Me</h1>
+            <form onsubmit="handleSubmit(event)">
+                <div id="name">
+                    <div id="firstname">
+                        <label for="firstName">First Name: </label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div id="lastname">
+                        <label for="lastName">Last Name: </label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <br><br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <!--<label for="country">Country: </label>
         <select id="country" name="country">
             <option value="usa">USA</option>
             <option value="australia">Australia</option>
@@ -50,13 +104,26 @@
             <option value="uk">United Kingdom</option>
             <option value="mexico">Mexico</option>
         </select>-->
-        <br>
-        <br>
-        <label for="subject">Subject:<br></label>
-        <textarea id="subject" name="subject" placeholder="Let's Talk About Design.."></textarea>
-        <br><br>
-        <button type="submit">Submit Form</button>
-    </form>
+                <br>
+                <br>
+                <label for="subject">Subject:<br></label>
+                <textarea id="subject" name="subject" placeholder="Let's Talk About Design.."></textarea>
+                <br><br>
+                <button type="submit">Submit Form</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <img class="logo" src="images/cyan-logo.png" alt="Portfolio Logo">
+        <p>Portfolio &copy; 2025 - Katelyn Wardell</p>
+        <p><a href="Katelyn Wardell Resume.pdf">Resume</a></p>
+        <!--<p><a href="https://www.whatinyarnationstore.etsy.com">Etsy Shop</a></p>-->
+        <p><a href="contactus.html">Contact</a></p>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/katelyn-e-wardell/" class="fa fa-linkedin"></a>
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>
