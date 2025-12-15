@@ -28,22 +28,58 @@
     align-content: center;
 }
 
-#kids-kit-box {
-    margin-bottom: 150px;
+
+.kids-kit-booklet {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0.5rem;
+    align-items: start;
+    margin-top: 10em;
 }
 
-
-#main .kids-kit-booklet img {
-    width: 32%;
+/* Hero image on the left */
+#kids-kit-hero {
+    width: 100%;
     height: auto;
 }
 
+/* Spreads container */
+#kids-kit-spreads {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+/* Spread images */
+#kids-kit-spreads img {
+    width: 100%;
+    height: auto;
+}
+
+/*
 .kids-kit-booklet {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    gap: 1em;
 }
+
+
+#main #kids-kit-hero img {
+    gap: 2em;
+    width: 40%;
+    height: auto;
+}
+
+
+#main #kids-kit-spreads {
+    display: flex;
+    gap: 1em;
+}
+
+#main #kids-kit-spreads img {
+    width: 1em;
+    height: auto;
+}*/
+
 
 #mammothpieces .merch {
     display: flex;

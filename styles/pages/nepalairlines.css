@@ -20,6 +20,29 @@
     }
 }
 
+#main #websitegif {
+    width: 100%;
+    height: auto;
+}
+
+#main .website-application {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
+#main .website-application h2,
+#main .website-application p {
+    margin: 0px;
+    margin-bottom: 1em;
+}
+
+#main #tie-application {
+    align-content: center;
+    padding-right: 8em;
+}
+
 /*
 #nepalAirlines #websitegif img {
     width: 200%;
