@@ -85,3 +85,7 @@
     display: flex;
     gap: 10px;
 }
+
+.process a {
+    text-decoration-color: rgb(168, 61, 47);
+}
