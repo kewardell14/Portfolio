@@ -15,6 +15,7 @@
 
 #main img {
     margin: 1em;
+    object-fit: cover;
 }
 
 
@@ -27,8 +28,8 @@
 .kids_combined img,
 .college_combined img,
 .senior_combined img {
-    width: 50%;
-    height: auto;
+    width: auto;
+    height: 50%;
 }
 
 
