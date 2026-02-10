@@ -1,17 +1,35 @@
-@import "./nav.css";
-@import "./layout.css";
-@import "./footer.css";
+@import "../nav.css";
+@import "../layout.css";
+@import "../footer.css";
 
 
 :root {
-    --color-primary: rgb(62, 171, 108);
+    --color-primary: rgb(73, 44, 8);
 
-    --font-heading: "urbane-rounded", sans-serif;
+    --font-heading: "lexia-hebrew", sans-serif;
+
+    --font-body: "Arial", sans-serif;
 
 }
 
 
+#main img {
+    margin: 1em;
+}
 
+
+.kids_combined,
+.college_combined,
+.senior_combined {
+    display: flex;
+}
+
+.kids_combined img,
+.college_combined img,
+.senior_combined img {
+    width: 50%;
+    height: auto;
+}
 
 
 
@@ -31,6 +49,10 @@
         font-style: normal;
     }
 
+}
+
+p {
+    font-family: var(--font-body);
 }
 
 /*
@@ -105,5 +127,5 @@
 */
 
 .process a {
-    text-decoration-color: rgb(168, 61, 47);
+    text-decoration-color: var(--color-primary);
 }
