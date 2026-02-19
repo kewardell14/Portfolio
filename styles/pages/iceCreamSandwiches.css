@@ -25,12 +25,26 @@
 }
 
 .kids_combined img,
-.college_combined img,
-.senior_combined img {
+.college_combined img {
     width: auto;
     height: 50%;
 }
 
+#main .senior_combined,
+#main .college_combined {
+    flex-wrap: wrap;
+}
+
+#main .senior_combined img {
+    width: 50%;
+    height: auto;
+}
+
+
+#main .college_combined img {
+    width: 33.3%;
+    height: auto;
+}
 
 
 /******************** Ice Cream Sandwiches Packaging *********************/
@@ -58,4 +72,11 @@ p {
 
 .process a {
     text-decoration-color: var(--color-primary);
+}
+
+img#dyeline {
+    width: 70%;
+    height: auto;
+    padding-block: 5em;
+    margin: auto;
 }
