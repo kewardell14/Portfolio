@@ -4,11 +4,11 @@
 
 
 :root {
-    --color-primary: rgb(73, 44, 8);
+    --color-primary: rgb(73, 37, 8);
 
     --font-heading: "lexia-hebrew", sans-serif;
 
-    --font-body: "Arial", sans-serif;
+    --font-body: "Helvetica", sans-serif;
 
 }
 
@@ -31,7 +31,8 @@
 }
 
 #main .senior_combined,
-#main .college_combined {
+#main .college_combined,
+#main .kids_combined {
     flex-wrap: wrap;
 }
 
@@ -46,6 +47,10 @@
     height: auto;
 }
 
+#main .kids_combined img {
+    width: 33.3%;
+    height: auto;
+}
 
 /******************** Ice Cream Sandwiches Packaging *********************/
 
@@ -65,8 +70,10 @@
 
 }
 
-p {
+p,
+li {
     font-family: var(--font-body);
+    line-height: 1.5;
 }
 
 
