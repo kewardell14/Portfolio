@@ -112,6 +112,8 @@
         /* Chat GPT stuff above */
         display: grid;
         grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+        /* I am not sure why this isn't working */
         align-content: center;
         /* Decide the spacing variable here */
         /* Figure out the padding value padding: 100px; */
@@ -174,8 +176,6 @@
         .gallery {
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, auto);
-            /*gap: 40px;
-            padding: 100px; */
         }
     }
 }

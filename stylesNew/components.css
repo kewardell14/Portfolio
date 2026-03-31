@@ -1,11 +1,13 @@
 @layer components {
 
 
-    /*
-    .intro {}
 
-    .intro h1 {}
-*/
+    .intro {
+        h1 {
+            text-align: center;
+            margin: var(--text-margin);
+        }
+    }
 
     .text-container {
         margin-left: var(--container-margin);
