@@ -3,10 +3,11 @@
         /* colors */
         --color-bg: #ffffff;
         --color-text: #111111;
-        --color-primary: #0077ff;
+        --color-primary: #00aeef;
 
-        --color-link: #0077ff;
-        --color-link-hover: #0055aa;
+        /* Possible color #0077ff */
+        --color-link: var(--color-primary);
+        --color-link-hover: color-mix(in srgb, var(--color-link) 80%, black);
 
         /* Base unit */
         --base-unit: 1rem;
