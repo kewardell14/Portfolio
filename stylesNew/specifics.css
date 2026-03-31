@@ -1,3 +1,16 @@
+@import "tokens.css";
+
+/* Home Styles */
+.intro {
+    h1 {
+        text-align: center;
+        margin: var(--text-margin);
+        color: var(--color-primary);
+    }
+}
+
+
+
 .combined {
     display: flex;
     width: 100%;
