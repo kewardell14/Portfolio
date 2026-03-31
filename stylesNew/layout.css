@@ -1,0 +1,181 @@
+@layer layout {
+    header {
+        display: grid;
+        grid-template-columns: 300px auto;
+        background-color: #00aeef;
+        height: 150px;
+        /*Controls the relationship between the columns for the logo and the rest of the nav. Creates spacing between the logo and nav.*/
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        object-fit: cover;
+        height: 100%;
+
+        a {
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            font-family: "itc-avant-garde-gothic-pro", sans-serif;
+            /* font-family: var(--font);*/
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        a:hover {
+            background-color: white;
+            color: #00aeef;
+        }
+
+    }
+
+    /* Keep all dropdown information in components */
+
+    .logo {
+        width: 250px;
+        /*Controls image size*/
+    }
+
+
+    .logo_link {
+        justify-self: center;
+        align-self: center;
+    }
+
+
+    /* Style The Dropdown Button */
+    .dropbtn {
+        background-color: #00aeef;
+        color: white;
+        padding: 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+        /* Links inside the dropdown */
+        a {
+            color: #00aeef;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-family: "itc-avant-garde-gothic-pro", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        /* Change color of dropdown links on hover */
+        a:hover {
+            background-color: rgb(214, 234, 255);
+            color: #00aeef;
+        }
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+        background-color: white;
+        color: #00aeef;
+    }
+
+
+
+
+
+
+    .gallery {
+        /*display: grid;
+        gap: var(--space-md);
+        grid-template-columns: 1fr; */
+        /* mobile */
+        /* Chat GPT stuff above */
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: center;
+        /* Decide the spacing variable here */
+        /* Figure out the padding value padding: 100px; */
+        /* Fix this layout-wise with everything else, it may not need padding here specifically. */
+
+        img {
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            align-content: center;
+            object-fit: cover;
+            /* was object-fit: contain before */
+        }
+
+        img:hover {
+            opacity: 0.5;
+        }
+
+    }
+
+
+    .grid-item {
+        aspect-ratio: 4 / 3;
+        /* slightly wider */
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+
+        /*
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; */
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            /* removes inline spacing issues */
+        }
+    }
+
+
+    /*.container {
+        width: min(1100px, 90%);
+        margin-inline: auto;
+    }*/
+
+
+    @media screen and (min-width: 768px) {
+        .gallery {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            /* Decide the spacing variable here */
+            /* Fix this layout-wise with everything else, it may not need padding here specifically. */
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .gallery {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            /*gap: 40px;
+            padding: 100px; */
+        }
+    }
+}

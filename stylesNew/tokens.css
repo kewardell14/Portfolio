@@ -1,0 +1,71 @@
+@layer tokens {
+    :root {
+        /* colors */
+        --color-bg: #ffffff;
+        --color-text: #111111;
+        --color-accent: #0077ff;
+
+        --color-link: #0077ff;
+        --color-link-hover: #0055aa;
+
+        /* Base unit */
+        --base-unit: 1rem;
+
+        /* Spacing scale */
+        --spacing-xs: calc(var(--base-unit) * 0.25);
+        /* 0.25rem */
+        --spacing-sm: calc(var(--base-unit) * 0.5);
+        /* 0.5rem */
+        --spacing-md: var(--base-unit);
+        /* 1rem */
+        --spacing-lg: calc(var(--base-unit) * 2);
+        /* 2rem */
+        --spacing-xl: calc(var(--base-unit) * 4);
+        /* 4rem */
+        --spacing-2xl: calc(var(--base-unit) * 6);
+        /* 6rem, optional extra-large */
+        --spacing-text-margin: calc(var(--base-unit) * 12);
+
+        /* Container margin using clamp() */
+        --container-margin: clamp(var(--spacing-md), 10vw, var(--spacing-xl));
+
+        /* Container margin for text sections */
+        --text-margin: clamp(var(--spacing-lg), 10vw, var(--spacing-text-margin));
+
+        /* typography */
+        --font-body: "itc-avant-garde-gothic-pro", sans-serif;
+        --font-heading: "itc-avant-garde-gothic-pro", sans-serif;
+        --font-weight-bold: 700;
+        --font-weight-regular: 400;
+        --font-weight-medium: 500;
+
+        --font-size-base: 1rem;
+        --scale-ratio: 1.25;
+
+        --font-size-sm: calc(var(--font-size-base) / var(--scale-ratio));
+        --font-size-md: var(--font-size-base);
+        --font-size-lg: calc(var(--font-size-base) * var(--scale-ratio));
+        --font-size-xl: calc(var(--font-size-base) * var(--scale-ratio) * var(--scale-ratio));
+
+        --line-height-tight: 1.2;
+        --line-height-normal: 1.5;
+        --line-height-loose: 1.7;
+
+
+        /* radius */
+        --radius: 8px;
+        /* I am not using radius for anything right now, but I may want to use it for buttons or cards in the future. */
+
+        /* transitions */
+        --ease: 0.3s ease;
+        /* Once I start using the transitions, this could be very helpful. */
+
+        /* breakpoints (reference only) */
+        --bp-tablet: 768px;
+        --bp-computer: 1024px;
+
+    }
+}
+
+
+/* Style this in the style of the website in general. */

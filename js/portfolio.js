@@ -11,7 +11,7 @@ function displayhomegallery(homegallery) { //This sets up the gallery
 
 function rendergallery(homegallery) { //Displays the gallery
     // get the element we will output the recipes into
-    let output = document.querySelector("#gallery");
+    let output = document.querySelector(".gallery");
     // use the recipeTemplate function to transform our recipe objects into recipe HTML strings
     let html = homegallery.map(i => displayhomegallery(i)).join("");
     // Set the HTML strings as the innerHTML of our output element.

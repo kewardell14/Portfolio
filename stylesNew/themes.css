@@ -1,0 +1,84 @@
+@layer themes {
+    .theme-default {
+        /* uses :root values */
+    }
+
+    .theme-dark {
+        --color-bg: #111;
+        --color-text: #f5f5f5;
+
+        /*****Navigation*****/
+        background-color: #333;
+        color: white;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: white;
+            font-family: "itc-avant-garde-gothic-pro", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        nav a,
+        .dropbtn {
+            color: white;
+        }
+
+        .dropdown-content a:hover {
+            background-color: white;
+            color: var(--cyan);
+        }
+
+        .dropdown-content a {
+            background-color: var(--cyan);
+            color: white;
+        }
+
+    }
+
+    .theme-kronk {
+        /* uses :root values */
+        --color-bg: white;
+        --color-text: #black;
+
+        --color-primary: #8b0004;
+        --color-secondary: #BC5F26;
+        --color-accent: #DB8F2F;
+
+        --color-link: #BC5F26;
+        --color-link-hover: #db8f2f;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--color-primary);
+            font-family: "peachy-keen-jf", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .process {
+            h3 {
+                color: var(--color-link);
+            }
+
+            a {
+                text-align: center;
+                margin-block: var(--text-margin);
+                text-decoration-color: var(--color-link-hover);
+            }
+
+            h3:hover {
+                color: var(--color-link-hover);
+            }
+        }
+
+    }
+}

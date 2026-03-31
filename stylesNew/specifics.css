@@ -1,0 +1,17 @@
+.combined {
+    display: flex;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.combined-fifty {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    object-fit: cover;
+}
+
+.group {
+    object-fit: cover;
+}

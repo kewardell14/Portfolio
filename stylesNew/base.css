@@ -1,0 +1,48 @@
+@layer base {
+    body {
+        /*margin: 0;
+        font-family: var(--font-body);
+        background: var(--color-bg);
+        color: var(--color-text);*/
+        /*Chat GPT's suggestion */
+    }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: auto;
+    }
+
+    #main section {
+        align-content: center;
+    }
+
+
+    /* I put this here from my old code in layout.css */
+
+    h1,
+    h2,
+    h3 {
+        font-family: var(--font-heading);
+        /*Chat GPT's suggestion */
+        color: var(--primary-color);
+    }
+
+    p {
+        /*line-height: 1.5;*/
+        /*Chat GPT's suggestion */
+    }
+
+    img {
+        /*max-width: 100%;
+        height: auto;
+        display: block;*/
+        /* This is what Chat recommended. Below is your code. */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        align-content: center;
+    }
+}
