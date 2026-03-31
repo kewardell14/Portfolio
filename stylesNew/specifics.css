@@ -5,7 +5,7 @@
     h1 {
         text-align: center;
         margin: var(--text-margin);
-        color: var(--color-primary);
+        color: #00aeef;
     }
 }
 
