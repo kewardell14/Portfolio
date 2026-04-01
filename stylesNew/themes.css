@@ -40,6 +40,35 @@
 
     }
 
+
+    .theme-ice-cream-sandwiches {
+        --color-primary: rgb(73, 37, 8);
+        --font-heading: "lexia-hebrew", sans-serif;
+        --font-body: "Helvetica", sans-serif;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--color-primary);
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        p,
+        li {
+            font-family: var(--font-body);
+            line-height: 1.5;
+        }
+
+        .process a {
+            text-decoration-color: var(--color-primary);
+        }
+    }
+
     .theme-kronk {
         /* uses :root values */
         --color-bg: white;
