@@ -268,6 +268,24 @@
 }
 
 
+/* Combined Styles for Gc booklet */
+.theme-gcbooklet .gcbookletimages {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.theme-gcbooklet .gcbookletimages img {
+    width: 49%;
+    height: auto;
+}
+
+
+
+
+
 /* About page */
 .theme-about #bio {
     display: flex;
