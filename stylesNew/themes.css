@@ -135,6 +135,27 @@
 
     }
 
+    .theme-banking {
+
+        /* uses :root values */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: rgb(0, 72, 139);
+        }
+
+        .process {
+            text-align: center;
+
+            a {
+                color: rgb(0, 72, 139);
+            }
+        }
+    }
+
     .theme-about {
 
         /* uses :root values */

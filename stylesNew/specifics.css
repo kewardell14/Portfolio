@@ -138,7 +138,23 @@
 
 
 
+/* Combined styles for Banking page */
+.theme-banking #main img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
 
+@media screen and (min-width: 768px) {
+    .theme-banking #main img {
+        width: 70%;
+        height: auto;
+    }
+}
+
+
+
+/* About page */
 .theme-about #bio {
     display: flex;
     flex-direction: column;
