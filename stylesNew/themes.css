@@ -40,6 +40,29 @@
 
     }
 
+    .theme-mammoth {
+        --color-primary: rgb(168, 61, 47);
+        --font-heading: "urbane-rounded", sans-serif;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--color-primary);
+            font-family: var(--font-heading), sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .process a {
+            text-decoration-color: var(--color-primary);
+            text-align: center;
+        }
+
+    }
+
 
     .theme-ice-cream-sandwiches {
         --color-primary: rgb(73, 37, 8);

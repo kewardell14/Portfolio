@@ -10,6 +10,55 @@
 }
 
 
+
+/* Combined styles for Mammoth page */
+
+.theme-mammoth .pictoral-logos {
+    display: flex;
+    justify-content: center;
+}
+
+.theme-mammoth #pictoral-motion {
+    width: 40%;
+    height: auto;
+    align-content: center;
+}
+
+
+.theme-mammoth .kids-kit-booklet {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0.5rem;
+    align-items: start;
+    margin-top: 10em;
+}
+
+/* Hero image on the left */
+.theme-mammoth #kids-kit-hero {
+    width: 100%;
+    height: auto;
+}
+
+/* Spreads container */
+.theme-mammoth #kids-kit-spreads {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+/* Spread images */
+.theme-mammoth #kids-kit-spreads img {
+    width: 100%;
+    height: auto;
+}
+
+.theme-mammoth #mammothpieces .merch {
+    display: flex;
+    gap: 10px;
+}
+
+
+
 /*Combined styles for Ice Cream Sandwiches page */
 .theme-ice-cream-sandwiches img#dyeline {
     width: 70%;
