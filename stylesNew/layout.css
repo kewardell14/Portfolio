@@ -7,6 +7,7 @@
         /*Controls the relationship between the columns for the logo and the rest of the nav. Creates spacing between the logo and nav.*/
     }
 
+
     nav {
         display: flex;
         justify-content: space-around;
