@@ -134,4 +134,25 @@
         }
 
     }
+
+    .theme-about {
+
+        /* uses :root values */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--color-primary);
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        p {
+            font-family: var(--font-body);
+            line-height: 1.5;
+        }
+    }
 }
