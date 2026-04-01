@@ -138,6 +138,105 @@
 
 
 
+/* Outlet Styles */
+.theme-outlet .main img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.theme-outlet h1 {
+    margin: var(--text-margin)
+}
+
+@media screen and (min-width: 768px) {
+    .theme-outlet .outletcovers {
+        text-align: center;
+        margin: 30px;
+    }
+
+    .theme-outlet .outletcovers img {
+        width: 80%;
+        height: auto;
+    }
+
+
+    .theme-outlet .outletgroup {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        img {
+            height: 300px;
+            width: auto;
+            margin: 0;
+        }
+    }
+
+    .theme-outlet .theexhibitimages img {
+        height: 640px;
+        width: auto;
+    }
+
+    .theme-outlet .theexhibitimages {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .theme-outlet .feathersimages img {
+        height: 640px;
+        width: auto;
+    }
+
+    .theme-outlet .feathersimages {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .theme-outlet .tnnwfocusspread img {
+        width: 1488px;
+        height: auto;
+    }
+
+    .theme-outlet .tnnwspreadsmockup {
+        display: flex;
+    }
+
+    .theme-outlet .sundaydriveimages {
+        display: flex;
+    }
+
+    .theme-outlet .sundaydrive img {
+        width: 730px;
+        height: auto;
+    }
+
+
+    .theme-outlet .theweightofasoleimg {
+        text-align: center;
+    }
+
+    .theme-outlet .theweightofasoleimg img {
+        width: 1480px;
+        height: auto;
+    }
+
+
+    .theme-outlet .galleryimages {
+        display: flex;
+        text-align: center;
+    }
+
+    .theme-outlet .galleryimages img {
+        width: 730px;
+        height: auto;
+    }
+}
+
+
 /* Combined styles for Banking page */
 .theme-banking #main img {
     width: 100%;

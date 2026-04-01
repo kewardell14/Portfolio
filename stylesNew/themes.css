@@ -135,6 +135,28 @@
 
     }
 
+
+    .theme-outlet {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: rgb(230, 67, 67);
+        }
+
+        .process {
+            text-align: center;
+            margin: var(--text-margin);
+
+            a {
+                color: rgb(230, 67, 67);
+            }
+        }
+    }
+
     .theme-banking {
 
         /* uses :root values */
