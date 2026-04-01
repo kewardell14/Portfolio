@@ -1,11 +1,4 @@
 @layer base {
-    body {
-        /*margin: 0;
-        font-family: var(--font-body);
-        background: var(--color-bg);
-        color: var(--color-text);*/
-        /*Chat GPT's suggestion */
-    }
 
     #main {
         display: flex;
@@ -33,6 +26,7 @@
     }
 
     p {
+        font-family: var(--font-body);
         /*line-height: 1.5;*/
         /*Chat GPT's suggestion */
     }

@@ -158,6 +158,118 @@
             grid-template-rows: repeat(2, auto);
         }
     }
+
+
+    /* Come back and add a nice ease transition to the menu items */
+
+    /* Slide Menu */
+    #menu-btn {
+        font-size: 28px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        justify-self: end;
+        margin-right: var(--spacing-md);
+        z-index: 1001;
+        position: relative;
+    }
+
+    #side-menu {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100%;
+        background-color: var(--color-brand);
+        display: flex;
+        flex-direction: column;
+        padding-top: var(--spacing-xl);
+        /* match header height */
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+
+    #side-menu a {
+        color: white;
+        padding: var(--spacing-md);
+        text-decoration: none;
+        font-family: "itc-avant-garde-gothic-pro", sans-serif;
+        font-weight: 700;
+    }
+
+    #side-menu.open {
+        right: 0;
+    }
+
+    /* Dark overlay */
+    #menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 999;
+    }
+
+    #menu-overlay.active {
+        display: block;
+    }
+
+    /* Hide original nav on mobile */
+    @media (max-width: 768px) {
+        nav {
+            display: none;
+        }
+    }
+
+    /* Identity Styles */
+    /* Expandable categories */
+    .menu-category {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .category-btn {
+        background: none;
+        border: none;
+        color: white;
+        font-weight: 700;
+        padding: var(--spacing-md);
+        padding-block: var(--spacing-xl);
+        text-align: left;
+        cursor: pointer;
+        text-decoration: none;
+        font-family: "itc-avant-garde-gothic-pro", sans-serif;
+        font-weight: 700;
+        width: 100%;
+        font-size: 16px;
+        /* match the links */
+        /* makes button full width like links */
+    }
+
+
+    .category-links {
+        display: none;
+        flex-direction: column;
+        padding-left: var(--spacing-md);
+    }
+
+    .category-links a {
+        color: var(--color-brand) !important;
+        font-weight: 500;
+        padding: 5px 0;
+    }
+
+    /* Show links when open */
+    .menu-category.open .category-links {
+        display: flex;
+        background-color: white;
+    }
+
+
 }
 
 
