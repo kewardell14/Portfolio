@@ -17,6 +17,8 @@
         a {
             text-align: center;
             color: white;
+            padding: var(--spacing-md);
+            /* This adds space around the links, so the hover is more visually interesting. It doesn't work as well if it is directly applied to the hover. */
             text-decoration: none;
             font-family: "itc-avant-garde-gothic-pro", sans-serif;
             /* font-family: var(--font);*/
@@ -49,7 +51,8 @@
     .dropbtn {
         background-color: var(--color-primary);
         color: white;
-        padding: 20px;
+        font-weight: 700;
+        padding: var(--spacing-md);
         font-size: 16px;
         border: none;
         cursor: pointer;
