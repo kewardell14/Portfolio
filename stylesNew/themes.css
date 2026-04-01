@@ -66,6 +66,7 @@
 
         .process a {
             text-decoration-color: var(--color-primary);
+            text-align: center;
         }
     }
 

@@ -10,21 +10,75 @@
 }
 
 
+/*Combined styles for Ice Cream Sandwiches page */
+.theme-ice-cream-sandwiches img#dyeline {
+    width: 70%;
+    height: auto;
+    padding-block: 5em;
+    margin: auto;
+}
 
-.combined {
+
+.theme-ice-cream-sandwiches #main img {
+    object-fit: cover;
+}
+
+
+.theme-ice-cream-sandwiches .kids_combined,
+.theme-ice-cream-sandwiches .college_combined,
+.theme-ice-cream-sandwiches .senior_combined {
+    display: flex;
+}
+
+.theme-ice-cream-sandwiches .kids_combined img,
+.theme-ice-cream-sandwiches .college_combined img {
+    width: auto;
+    height: 50%;
+}
+
+.theme-ice-cream-sandwiches .senior_combined,
+.theme-ice-cream-sandwiches .college_combined,
+.theme-ice-cream-sandwiches .kids_combined {
+    flex-wrap: wrap;
+}
+
+.theme-ice-cream-sandwiches .senior_combined img {
+    width: 50%;
+    height: auto;
+}
+
+
+.theme-ice-cream-sandwiches .college_combined img {
+    width: 33.3%;
+    height: auto;
+}
+
+.theme-ice-cream-sandwiches .kids_combined img {
+    width: 33.3%;
+    height: auto;
+}
+
+
+
+
+
+
+
+/* Combined image styles for Kronk theme */
+.theme-kronk .combined {
     display: flex;
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-.combined-fifty {
+.theme-kronk .combined-fifty {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
     object-fit: cover;
 }
 
-.group {
+.theme-kronk .group {
     object-fit: cover;
 }
