@@ -86,7 +86,7 @@
 
 /* Combined styles for Mammoth page */
 
-.theme-mammoth section {
+.theme-mammoth .main section {
     margin-block: var(--spacing-2xl);
 }
 
