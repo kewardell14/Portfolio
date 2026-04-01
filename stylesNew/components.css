@@ -85,7 +85,7 @@
         /*text-align: center;
         padding: var(--space-lg);*/
         /* This is ChatGPT's suggestion */
-        color: var(--color-primary);
+        color: var(--color-brand);
         margin-top: 200px;
         padding: 10px 10px;
         display: flex;
@@ -95,12 +95,12 @@
         align-items: center;
 
         a {
-            color: var(--color-primary);
+            color: var(--color-brand);
             text-decoration: none;
         }
 
         a:hover {
-            color: var(--color-primary);
+            color: var(--color-brand);
             /* Come back to this */
         }
 
@@ -133,7 +133,7 @@
         height: 25px;
         text-align: center;
         text-decoration: none;
-        background: var(--color-primary);
+        background: var(--color-brand);
         color: white;
         margin-right: 20px;
     }
