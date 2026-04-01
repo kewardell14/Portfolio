@@ -135,6 +135,45 @@
 }
 
 
+/* Menu styles */
+
+.theme-menu .main img {
+    margin: auto;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .theme-menu .main img {
+        display: flex;
+    }
+}
+
+
+/* We're goin to ignore this page for now due to style and other issues */
+/* Nepal Airlines page */
+.theme-nepalairlines .main img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.theme-nepalairlines #websitegif {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .theme-nepalairlines .website-application {
+        display: flex;
+    }
+
+    .theme-nepalairlines .tie-application {
+        align-content: center;
+        width: 70%;
+        height: auto;
+    }
+
+}
 
 
 
