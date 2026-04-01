@@ -135,6 +135,31 @@
 
     }
 
+    .theme-kidentity {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #da1c5c;
+            font-family: "proxima-nova", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .process {
+            text-align: center;
+            margin: var(--text-margin);
+
+            a {
+                color: #da1c5c;
+            }
+        }
+    }
+
+
 
     .theme-menu {
 

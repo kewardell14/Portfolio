@@ -135,6 +135,105 @@
 }
 
 
+/* Identity Styles */
+.theme-kidentity .main img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .theme-kidentity #idpackage img {
+        margin: auto;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .theme-kidentity .idpackage img,
+    .theme-kidentity .idpackagepieces img {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .theme-kidentity .Kennadeeinfo {
+        display: block;
+        padding: 30px;
+    }
+
+    .theme-kidentity .Kennadeeinfo h1,
+    .theme-kidentity .Kennadeeinfo h2,
+    .theme-kidentity .Kennadeeinfo p {
+        text-align: left;
+    }
+
+    .theme-kidentity .idpackagelogo img {
+        width: 80%;
+        height: auto;
+        padding: 0px;
+    }
+
+    .theme-kidentity .businesscardimages {
+        display: flex;
+
+        img {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+        }
+    }
+
+    .theme-kidentity .meetKennadee img,
+    .theme-kidentity .fonts img,
+    .theme-kidentity .colors img,
+    .theme-kidentity .patterns img,
+    .theme-kidentity .invoice img {
+        width: 100%;
+        height: auto;
+    }
+
+    .theme-kidentity .crayonName img {
+        width: 100%;
+        height: auto;
+    }
+
+    .theme-kidentity.idpackage h3 {
+        margin-top: 100px;
+
+        a {
+            color: #da1c5c;
+        }
+    }
+
+    .theme-kidentity .envelope,
+    .theme-kidentity .styleguide {
+        display: flex;
+    }
+
+    .theme-kidentity .envelope img {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+
+    .theme-kidentity .styleguide img {
+        padding: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    .theme-kidentity #crayonAttributes {
+        width: 107%;
+        height: auto;
+    }
+
+}
+
+
 /* Menu styles */
 
 .theme-menu .main img {
