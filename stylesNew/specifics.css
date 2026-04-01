@@ -11,54 +11,24 @@
 
 
 
-/* Combined styles for Mammoth page */
 
-.theme-mammoth section {
-    margin-block: var(--spacing-2xl);
-}
-
-
-.theme-mammoth .pictoral-logos {
+/* Combined image styles for Kronk theme */
+.theme-kronk .combined {
     display: flex;
-    justify-content: center;
-}
-
-.theme-mammoth #pictoral-motion {
-    width: 40%;
-    height: auto;
-    align-content: center;
-}
-
-
-.theme-mammoth .kids-kit-booklet {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 0.5rem;
-    align-items: start;
-    margin-top: 10em;
-}
-
-/* Hero image on the left */
-.theme-mammoth #kids-kit-hero {
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
-/* Spreads container */
-.theme-mammoth #kids-kit-spreads {
+.theme-kronk .combined-fifty {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.5rem;
-}
-
-/* Spread images */
-.theme-mammoth #kids-kit-spreads img {
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    height: auto;
+    object-fit: cover;
 }
 
-.theme-mammoth #mammothpieces .merch {
-    display: flex;
+.theme-kronk .group {
+    object-fit: cover;
 }
 
 
@@ -114,27 +84,57 @@
 
 
 
+/* Combined styles for Mammoth page */
+
+.theme-mammoth section {
+    margin-block: var(--spacing-2xl);
+}
 
 
-
-/* Combined image styles for Kronk theme */
-.theme-kronk .combined {
+.theme-mammoth .pictoral-logos {
     display: flex;
+    justify-content: center;
+}
+
+.theme-mammoth #pictoral-motion {
+    width: 40%;
+    height: auto;
+    align-content: center;
+}
+
+
+.theme-mammoth .kids-kit-booklet {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0.5rem;
+    align-items: start;
+    margin-top: 10em;
+}
+
+/* Hero image on the left */
+.theme-mammoth #kids-kit-hero {
     width: 100%;
     height: auto;
-    object-fit: cover;
 }
 
-.theme-kronk .combined-fifty {
+/* Spreads container */
+.theme-mammoth #kids-kit-spreads {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    object-fit: cover;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
 }
 
-.theme-kronk .group {
-    object-fit: cover;
+/* Spread images */
+.theme-mammoth #kids-kit-spreads img {
+    width: 100%;
+    height: auto;
 }
+
+.theme-mammoth #mammothpieces .merch {
+    display: flex;
+}
+
+
 
 
 
@@ -251,6 +251,21 @@
     }
 }
 
+
+
+/* Combined styles for Hamlet page */
+.theme-hamlet #main img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .theme-hamlet #main img {
+        width: 60%;
+        height: auto;
+    }
+}
 
 
 /* About page */

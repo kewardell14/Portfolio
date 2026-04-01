@@ -91,7 +91,7 @@
         padding: var(--space-lg);*/
         /* This is ChatGPT's suggestion */
         color: var(--color-brand);
-        margin-top: 200px;
+        margin-top: var(--spacing-xl);
         padding: 10px 10px;
         display: flex;
         flex-direction: column;

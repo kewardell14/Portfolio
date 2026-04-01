@@ -81,8 +81,8 @@
             font-style: normal;
         }
 
-        p,
-        li {
+        #main p,
+        #main li {
             font-family: var(--font-body);
             line-height: 1.5;
         }
@@ -178,6 +178,28 @@
         }
     }
 
+
+    .theme-hamlet {
+
+        /* uses :root values */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: rgb(104, 18, 18);
+            font-family: "Times New Roman", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        #main p {
+            font-family: "Times New Roman", serif;
+        }
+    }
+
+
     .theme-about {
 
         /* uses :root values */
@@ -193,7 +215,7 @@
             font-style: normal;
         }
 
-        p {
+        #main p {
             font-family: var(--font-body);
             line-height: 1.5;
         }
