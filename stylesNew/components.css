@@ -2,12 +2,16 @@
 
 
     .text-container {
-        margin-left: var(--container-margin);
-        margin-right: var(--container-margin);
-        max-width: 80ch;
+        max-width: 60ch;
         margin: auto;
         margin-block: var(--text-margin);
         /* roughly 70 characters per line for readability */
+    }
+
+    @media screen and (min-width: 768px) {
+        .text-container {
+            max-width: 80ch;
+        }
     }
 
     .thank-you {

@@ -30,7 +30,7 @@
         /* 8rem, optional extra-large */
         --spacing-text-margin: calc(var(--base-unit) * 12.5);
         /* 12.5rem ≈ 200px */
-        --text-margin: clamp(var(--spacing-lg), 10vw, var(--spacing-text-margin));
+        --text-margin: clamp(var(--spacing-xl), 10vw, var(--spacing-text-margin));
 
         /* Container margin using clamp() */
         --container-margin: clamp(var(--spacing-md), 10vw, var(--spacing-xl));
