@@ -14,23 +14,64 @@
 
 /* Combined image styles for Kronk theme */
 .theme-kronk .combined {
-    display: flex;
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
+@media screen and (min-width: 768px) {
+    .theme-kronk .combined {
+        display: flex;
+    }
+}
+
 .theme-kronk .combined-fifty {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     width: 100%;
     object-fit: cover;
 }
 
-.theme-kronk .group {
-    object-fit: cover;
+@media screen and (min-width: 768px) {
+    .theme-kronk .combined-fifty {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
+/* Container adjustments to make room for lever */
+.kronk-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.carousel-container {
+    overflow: hidden;
+    flex: 1;
+}
+
+/* Lever styling */
+.theme-kronk .carousel-lever {
+    background: var(--color-primary);
+    /* Kronk accent */
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5em 0.7em;
+    margin-left: 10px;
+    /* space from carousel */
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+/* Lever hover animation: slight “pull” */
+.theme-kronk .carousel-lever:hover {
+    transform: rotate(20deg) scale(1.1);
+}
 
 
 /*Combined styles for Ice Cream Sandwiches page */

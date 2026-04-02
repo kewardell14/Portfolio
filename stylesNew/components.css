@@ -23,12 +23,18 @@
     /**Description text, client, and disciplines**/
     .overviewtext {
         display: flex;
-        margin-left: var(--container-margin);
-        margin-right: var(--container-margin);
+        margin: var(--text-margin);
         max-width: 70ch;
-        margin: auto;
         margin-top: var(--spacing-lg);
         margin-bottom: var(--spacing-xl);
+    }
+
+    @media screen and (min-width: 768px) {
+        .overviewtext {
+            margin: auto;
+            margin-top: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+        }
     }
 
     /**Descriptive text beginning**/
@@ -36,7 +42,7 @@
         padding-right: var(--spacing-lg);
 
         p {
-            padding-top: var(--spacing-xs);
+            padding-top: calc (var(--spacing-xs) / 2);
         }
     }
 
@@ -86,68 +92,41 @@
     }
 
 
-    footer {
-        /*text-align: center;
-        padding: var(--space-lg);*/
-        /* This is ChatGPT's suggestion */
-        color: var(--color-brand);
-        margin-top: var(--spacing-xl);
-        padding: 10px 10px;
+    .carousel {
+        position: relative;
+        overflow: hidden;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .carousel-slides {
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        font-family: "Lora", Verdana, Geneva, Tahoma, sans-serif;
-        align-items: center;
-
-        a {
-            color: var(--color-brand);
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: var(--color-brand);
-            /* Come back to this */
-        }
-
-        p {
-            font-size: 1em;
-            margin: 20px;
-        }
-
-        p:hover {
-            text-decoration: underline;
-        }
-
-        @media (min-width: 768px) {
-            flex-direction: row;
-        }
+        transition: transform 0.4s ease-in-out;
     }
 
-    .social {
-        /*display: flex;
-        justify-content: center;
-        gap: var(--space-md);*/
-        /* This is ChatGPT's suggestion */
-        height: auto;
+    .carousel-slides img {
+        width: 100%;
+        flex-shrink: 0;
     }
 
-    .fa {
-        padding: 20px;
-        font-size: 30px;
-        width: 25px;
-        height: 25px;
-        text-align: center;
-        text-decoration: none;
-        background: var(--color-brand);
-        color: white;
-        margin-right: 20px;
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.8);
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 0.2em 0.5em;
+        z-index: 10;
     }
 
-    /* Responsive component behavior */
-    @media (min-width: 768px) {
-        /*.card {
-            padding: var(--space-lg);
-        }*/
-        /*Chat GPT's suggestion */
+    .carousel-btn.prev {
+        left: 10px;
     }
+
+    .carousel-btn.next {
+        right: 10px;
+    }
+
 }
