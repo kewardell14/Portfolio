@@ -17,6 +17,8 @@
         <a id="logo_link" href="index.html">
             <img class="logo" src="images/logo-white.png" alt="Portfolio Logo">
         </a>
+
+        <!-- Original nav kept for desktop -->
         <nav>
             <a href="index.html">Home</a>
 
@@ -58,7 +60,60 @@
 
             <a href="about.html">About</a>
         </nav>
+
+        <!-- Menu button for mobile -->
+        <button id="menu-btn">☰</button>
     </header>
+
+    <!-- Slide menu -->
+    <div id="side-menu">
+        <a href="index.html">Home</a>
+
+        <!-- Branding category -->
+        <div class="menu-category">
+            <button class="category-btn">Branding</button>
+            <div class="category-links">
+                <a href="identitypackage.html">Identity Package</a>
+                <a href="mammoth.html">The Mammoth Site</a>
+                <a href="menu.html">Anthos Menu</a>
+            </div>
+        </div>
+
+        <!-- Packaging category -->
+        <div class="dropdown">
+            <button class="dropbtn">Packaging</button>
+            <div class="dropdown-content">
+                <a href="kronksubscription.html">Kronk's Kitchen Collection</a>
+                <a href="icecreamsandwiches.html">Ice Cream Sandwiches</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">UX/UI</button>
+            <div class="dropdown-content">
+                <a href="https://katelynwardellportfolio.framer.website/endofcoursesurvey" target="_blank">Faculty
+                    EOC Dashboard</a>
+                <a href="https://katelynwardellportfolio.framer.website/mother3" target="_blank">Mother 3</a>
+                <a href="https://katelynwardellportfolio.framer.website/banking" target="_blank">Banking Website</a>
+            </div>
+        </div>
+
+        <!-- Booklets category -->
+        <div class="menu-category">
+            <button class="category-btn">Booklets</button>
+            <div class="category-links">
+                <a href="outlet.html">Outlet Publication</a>
+                <a href="hamlet.html">Hamlet Book Covers</a>
+                <a href="gcbooklet.html">General Conference Booklet</a>
+            </div>
+        </div>
+
+        <a href="about.html">About</a>
+    </div>
+
+    <!-- Dark overlay -->
+    <div id="menu-overlay"></div>
+
     <div id="bio">
         <img id="profile" src="images/profile.jpg" alt="Profile Picture">
         <section class="msg">
