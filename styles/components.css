@@ -531,15 +531,13 @@
         }*/
     }
 
-
+    /* Customize a button and hover later if you use them. */
     .button {
-        /*display: inline-block;
-    padding: var(--space-sm) var(--space-md);
-    background: var(--color-accent);
-    color: white;
-    border-radius: var(--radius);
-    transition: transform var(--ease);*/
-        /*Chat GPT's suggestion */
+        display: inline-block;
+        padding: var(--space-sm) var(--space-md);
+        background: var(--color-accent);
+        color: white;
+        border-radius: var(--radius-pill);
     }
 
     .header button {
@@ -548,11 +546,6 @@
         font-family: "itc-avant-garde-gothic-pro", sans-serif;
         font-weight: 700;
         font-style: normal;
-    }
-
-    .button:hover {
-        /* transform: translateY(-3px); */
-        /*Chat GPT's suggestion */
     }
 
 
