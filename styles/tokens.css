@@ -19,7 +19,7 @@
 
         /* Links and Buttons*/
         --color-link: var(--color-primary);
-        --color-link-hover: color-mix(in srgb, var(--color-link) 80%, black);
+        --color-link-hover: color-mix(in srgb, var(--color-link) 50%, black);
         --button-primary: var(--color-primary);
         --button-primary-hover: color-mix(in srgb, var(--button-primary) 70%, black 30%);
         --button-focus: #005fcc;

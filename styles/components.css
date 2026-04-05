@@ -149,7 +149,7 @@
         /* Using your brand color with transparency */
         background-color: var(--color-brand);
         /* Adjust '0.85' if you want it more or less see-through */
-        background: color-mix(in srgb, var(--color-brand), transparent 30%);
+        background: color-mix(in srgb, var(--color-brand), transparent 20%);
 
         display: flex;
         align-items: center;
