@@ -1,3 +1,5 @@
+@import "tokens.css";
+
 @layer components {
 
 
@@ -135,6 +137,48 @@
         transform: translateY(-8px);
         opacity: 0.7;
     }
+
+    /* 1. The Overlay Container */
+    .grid-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        /* Using your brand color with transparency */
+        background-color: var(--color-brand);
+        /* Adjust '0.85' if you want it more or less see-through */
+        background: color-mix(in srgb, var(--color-brand), transparent 30%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* Hidden by default */
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+        /* Allows the click to pass through to the link */
+    }
+
+    /* 2. The Text Styling */
+    .grid-overlay span {
+        color: white;
+        font-family: var(--font-heading);
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        padding: var(--spacing-md);
+        letter-spacing: 0.05em;
+    }
+
+    /* 3. The Hover Trigger */
+    .grid-item:hover .grid-overlay {
+        opacity: 1;
+    }
+
+
 
     /*.container { width: min(1100px, 90%); margin-inline: auto; }*/
     @media screen and (min-width: 768px) {
