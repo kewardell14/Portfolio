@@ -1,16 +1,28 @@
 @layer tokens {
     :root {
-        /* colors */
+        /* Colors */
+
+        /* My personal brand color */
+        /* Possible brand color: #0077ff */
         --color-brand: #00aeef;
 
-        --color-bg: #ffffff;
+        /* Colors for Theme*/
+        --color-background: #ffffff;
         --color-text: #111111;
         --color-primary: #00aeef;
+        --color-secondary: white;
 
+        /* Semantic Colors */
+        --color-success: #2e7d32;
+        --color-warning: #ed6c02;
+        --color-error: #d32f2f;
 
-        /* Possible color #0077ff */
+        /* Links and Buttons*/
         --color-link: var(--color-primary);
         --color-link-hover: color-mix(in srgb, var(--color-link) 80%, black);
+        --button-primary: var(--color-primary);
+        --button-primary-hover: color-mix(in srgb, var(--button-primary) 70%, black 30%);
+        --button-focus: #005fcc;
 
         /* Base unit */
         --base-unit: 1rem;
@@ -35,7 +47,7 @@
         /* Container margin using clamp() */
         --container-margin: clamp(var(--spacing-md), 10vw, var(--spacing-xl));
 
-        /* typography */
+        /* Typography */
         --font-body: "itc-avant-garde-gothic-pro", sans-serif;
         --font-heading: "itc-avant-garde-gothic-pro", sans-serif;
         --font-weight-bold: 700;
@@ -54,21 +66,29 @@
         --line-height-normal: 1.5;
         --line-height-loose: 1.7;
 
+        /* Border Radius */
+        --radius-sm: 4px;
+        --radius-md: 8px;
+        --radius-lg: 16px;
+        --radius-pill: 999px;
 
-        /* radius */
-        --radius: 8px;
-        /* I am not using radius for anything right now, but I may want to use it for buttons or cards in the future. */
+        /* Shadows */
+        --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+        --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.08);
+        --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
 
-        /* transitions */
-        --ease: 0.3s ease;
-        /* Once I start using the transitions, this could be very helpful. */
 
-        /* breakpoints (reference only) */
+        /* Order */
+        --z-base: 0;
+        --z-side-menu: 1000;
+        --z-menu-button: 1001;
+
+        /* Transitions */
+        --normal-ease: 0.3s ease;
+
+        /* Breakpoints (reference only) */
         --bp-tablet: 768px;
         --bp-computer: 1024px;
 
     }
 }
-
-
-/* Style this in the style of the website in general. */

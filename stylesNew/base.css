@@ -1,18 +1,23 @@
 @layer base {
 
-    #main {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        margin: auto;
+    body {
+        line-height: 1.6;
     }
 
-    #main section {
-        align-content: center;
+    h1 {
+        font-size: 3.2rem;
+        margin-bottom: 1.6rem;
     }
 
+    h2 {
+        font-size: 2.4rem;
+        margin-bottom: 1.4rem;
+    }
 
-    /* I put this here from my old code in layout.css */
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+    }
 
     h1,
     h2,
@@ -21,24 +26,33 @@
     h5,
     h6 {
         font-family: var(--font-heading);
-        /*Chat GPT's suggestion */
         color: var(--primary-color);
     }
 
     p {
         font-family: var(--font-body);
-        /*line-height: 1.5;*/
-        /*Chat GPT's suggestion */
+        margin-bottom: 1.6rem;
+    }
+
+    ul {
+        margin-bottom: 1.6rem;
+        padding-left: 2rem;
+        list-style: disc;
+    }
+
+    li {
+        margin-bottom: 0.8rem;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: underline;
     }
 
     img {
-        /*max-width: 100%;
-        height: auto;
-        display: block;*/
-        /* This is what Chat recommended. Below is your code. */
         display: flex;
         justify-content: center;
-        width: 100%;
+        max-width: 100%;
         height: auto;
         align-content: center;
     }

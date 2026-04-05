@@ -1,4 +1,4 @@
-@layer tokens {
+@layer reset {
     /**
      * CSS Reset
      * Minimal reset for consistent cross-browser styling
@@ -13,7 +13,6 @@
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
     }
 
     html {

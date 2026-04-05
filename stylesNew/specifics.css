@@ -1,504 +1,524 @@
 @import "tokens.css";
 
-/* Home Styles */
-.intro {
-    h1 {
-        text-align: center;
-        margin: var(--text-margin);
-        color: var(--color-primary);
+@layer specifics {
+
+
+    /*-------------- Home Styles --------------*/
+    .intro {
+        h1 {
+            text-align: center;
+            margin: var(--text-margin);
+            color: var(--color-primary);
+        }
     }
-}
 
 
-
-
-/* Combined image styles for Kronk theme */
-.theme-kronk .combined {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-@media screen and (min-width: 768px) {
+    /*-------------- Combined image styles for Kronk theme --------------*/
     .theme-kronk .combined {
-        display: flex;
-    }
-}
-
-.theme-kronk .combined-fifty {
-    width: 100%;
-    object-fit: cover;
-}
-
-@media screen and (min-width: 768px) {
-    .theme-kronk .combined-fifty {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Container adjustments to make room for lever */
-.kronk-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    margin: auto;
-    position: relative;
-}
-
-.carousel-container {
-    overflow: hidden;
-    flex: 1;
-}
-
-/* Lever styling */
-.theme-kronk .carousel-lever {
-    background: var(--color-primary);
-    /* Kronk accent */
-    border: none;
-    color: white;
-    font-size: 2rem;
-    padding: 0.5em 0.7em;
-    margin-left: 10px;
-    /* space from carousel */
-    cursor: pointer;
-    border-radius: 50%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease;
-}
-
-/* Lever hover animation: slight “pull” */
-.theme-kronk .carousel-lever:hover {
-    transform: rotate(20deg) scale(1.1);
-}
-
-
-/*Combined styles for Ice Cream Sandwiches page */
-.theme-ice-cream-sandwiches img#dyeline {
-    width: 70%;
-    height: auto;
-    padding-block: 5em;
-    margin: auto;
-}
-
-
-.theme-ice-cream-sandwiches #main img {
-    object-fit: cover;
-}
-
-
-.theme-ice-cream-sandwiches .kids_combined,
-.theme-ice-cream-sandwiches .college_combined,
-.theme-ice-cream-sandwiches .senior_combined {
-    display: flex;
-}
-
-.theme-ice-cream-sandwiches .kids_combined img,
-.theme-ice-cream-sandwiches .college_combined img {
-    width: auto;
-    height: 50%;
-}
-
-.theme-ice-cream-sandwiches .senior_combined,
-.theme-ice-cream-sandwiches .college_combined,
-.theme-ice-cream-sandwiches .kids_combined {
-    flex-wrap: wrap;
-}
-
-.theme-ice-cream-sandwiches .senior_combined img {
-    width: 50%;
-    height: auto;
-}
-
-
-.theme-ice-cream-sandwiches .college_combined img {
-    width: 33.3%;
-    height: auto;
-}
-
-.theme-ice-cream-sandwiches .kids_combined img {
-    width: 33.3%;
-    height: auto;
-}
-
-
-
-
-/* Combined styles for Mammoth page */
-
-.theme-mammoth .main section {
-    margin-block: var(--spacing-2xl);
-}
-
-
-.theme-mammoth .pictoral-logos {
-    display: flex;
-    justify-content: center;
-}
-
-.theme-mammoth #pictoral-motion {
-    width: 40%;
-    height: auto;
-    align-content: center;
-}
-
-
-.theme-mammoth .kids-kit-booklet {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 0.5rem;
-    align-items: start;
-    margin-top: 10em;
-}
-
-/* Hero image on the left */
-.theme-mammoth #kids-kit-hero {
-    width: 100%;
-    height: auto;
-}
-
-/* Spreads container */
-.theme-mammoth #kids-kit-spreads {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.5rem;
-}
-
-/* Spread images */
-.theme-mammoth #kids-kit-spreads img {
-    width: 100%;
-    height: auto;
-}
-
-.theme-mammoth #mammothpieces .merch {
-    display: flex;
-}
-
-
-/* Identity Styles */
-.theme-kidentity .main img {
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
-
-
-@media screen and (min-width: 768px) {
-
-    .theme-kidentity #idpackage img {
-        margin: auto;
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-    }
-
-    .theme-kidentity .idpackage img,
-    .theme-kidentity .idpackagepieces img {
-        width: 100%;
         height: auto;
-        justify-content: center;
-    }
-
-    .theme-kidentity .Kennadeeinfo {
-        display: block;
-        padding: 30px;
-    }
-
-    .theme-kidentity .Kennadeeinfo h1,
-    .theme-kidentity .Kennadeeinfo h2,
-    .theme-kidentity .Kennadeeinfo p {
-        text-align: left;
-    }
-
-    .theme-kidentity .idpackagelogo img {
-        width: 80%;
-        height: auto;
-        padding: 0px;
-    }
-
-    .theme-kidentity .businesscardimages {
-        display: flex;
+        max-width: 100vw;
+        object-fit: cover;
 
         img {
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .theme-kronk .combined {
+            display: flex;
+        }
+    }
+
+    .theme-kronk .combined-fifty {
+        max-width: 100%;
+        object-fit: cover;
+        max-width: 100vw;
+
+        img {
+            width: fit-content;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .theme-kronk .combined-fifty {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+
+
+
+
+    /* Container adjustments to make room for lever */
+    .kronk-carousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+        margin: auto;
+        position: relative;
+    }
+
+    .carousel-container {
+        overflow: hidden;
+        flex: 1;
+    }
+
+    /* Lever styling */
+    .theme-kronk .carousel-lever {
+        background: var(--color-primary);
+        /* Kronk accent */
+        border: none;
+        color: white;
+        font-size: 2rem;
+        padding: 0.5em 0.7em;
+        margin-left: 10px;
+        /* space from carousel */
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s ease;
+    }
+
+    /* Lever hover animation: slight “pull” */
+    .theme-kronk .carousel-lever:hover {
+        transform: rotate(20deg) scale(1.1);
+    }
+
+
+    /*-------------- Combined styles for Ice Cream Sandwiches page --------------*/
+    .theme-ice-cream-sandwiches img#dyeline {
+        width: 70%;
+        height: auto;
+        padding-block: 5em;
+        margin: auto;
+    }
+
+
+    .theme-ice-cream-sandwiches #main img {
+        object-fit: cover;
+    }
+
+
+    .theme-ice-cream-sandwiches .kids_combined,
+    .theme-ice-cream-sandwiches .college_combined,
+    .theme-ice-cream-sandwiches .senior_combined {
+        display: flex;
+    }
+
+    .theme-ice-cream-sandwiches .kids_combined img,
+    .theme-ice-cream-sandwiches .college_combined img {
+        width: auto;
+        height: 50%;
+    }
+
+    .theme-ice-cream-sandwiches .senior_combined,
+    .theme-ice-cream-sandwiches .college_combined,
+    .theme-ice-cream-sandwiches .kids_combined {
+        flex-wrap: wrap;
+    }
+
+    .theme-ice-cream-sandwiches .senior_combined img {
+        width: 50%;
+        height: auto;
+    }
+
+
+    .theme-ice-cream-sandwiches .college_combined img {
+        width: 33.3%;
+        height: auto;
+    }
+
+    .theme-ice-cream-sandwiches .kids_combined img {
+        width: 33.3%;
+        height: auto;
+    }
+
+
+
+
+    /*-------------- Combined styles for Mammoth page --------------*/
+
+    .theme-mammoth .main section {
+        margin-block: var(--spacing-2xl);
+    }
+
+
+    .theme-mammoth .pictoral-logos {
+        display: flex;
+        justify-content: center;
+    }
+
+    .theme-mammoth #pictoral-motion {
+        width: 40%;
+        height: auto;
+        align-content: center;
+    }
+
+
+    .theme-mammoth .kids-kit-booklet {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: start;
+        margin-top: 10em;
+    }
+
+    /* Hero image on the left */
+    .theme-mammoth #kids-kit-hero {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Spreads container */
+    .theme-mammoth #kids-kit-spreads {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Spread images */
+    .theme-mammoth #kids-kit-spreads img {
+        width: 100%;
+        height: auto;
+    }
+
+    .theme-mammoth #mammothpieces .merch {
+        display: flex;
+    }
+
+    .theme-mammoth .product-grid-split {
+        gap: 0;
+        margin: 0;
+    }
+
+
+
+    /*-------------- Identity Styles --------------*/
+    .theme-kidentity .main img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+
+    @media screen and (min-width: 768px) {
+
+        .theme-kidentity #idpackage img {
+            margin: auto;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .theme-kidentity .idpackage img,
+        .theme-kidentity .idpackagepieces img {
+            width: 100%;
+            height: auto;
+            justify-content: center;
+        }
+
+        .theme-kidentity .Kennadeeinfo {
+            display: block;
+            padding: 30px;
+        }
+
+        .theme-kidentity .Kennadeeinfo h1,
+        .theme-kidentity .Kennadeeinfo h2,
+        .theme-kidentity .Kennadeeinfo p {
+            text-align: left;
+        }
+
+        .theme-kidentity .idpackagelogo img {
+            width: 80%;
+            height: auto;
+            padding: 0px;
+        }
+
+        .theme-kidentity .businesscardimages {
+            display: flex;
+
+            img {
+                width: 100%;
+                height: auto;
+                padding: 10px;
+            }
+        }
+
+        .theme-kidentity .meetKennadee img,
+        .theme-kidentity .fonts img,
+        .theme-kidentity .colors img,
+        .theme-kidentity .patterns img,
+        .theme-kidentity .invoice img {
+            width: 100%;
+            height: auto;
+        }
+
+        .theme-kidentity .crayonName img {
+            width: 100%;
+            height: auto;
+        }
+
+        .theme-kidentity.idpackage h3 {
+            margin-top: 100px;
+
+            a {
+                color: #da1c5c;
+            }
+        }
+
+        .theme-kidentity .envelope,
+        .theme-kidentity .styleguide {
+            display: flex;
+        }
+
+        .theme-kidentity .envelope img {
             width: 100%;
             height: auto;
             padding: 10px;
         }
+
+
+        .theme-kidentity .styleguide img {
+            padding: 10px;
+            width: 100%;
+            height: auto;
+        }
+
+        .theme-kidentity #crayonAttributes {
+            width: 107%;
+            height: auto;
+        }
+
     }
 
-    .theme-kidentity .meetKennadee img,
-    .theme-kidentity .fonts img,
-    .theme-kidentity .colors img,
-    .theme-kidentity .patterns img,
-    .theme-kidentity .invoice img {
-        width: 100%;
-        height: auto;
+
+    /*-------------- Menu styles --------------*/
+
+    .theme-menu .main img {
+        margin: auto;
+        justify-content: center;
     }
 
-    .theme-kidentity .crayonName img {
-        width: 100%;
-        height: auto;
-    }
-
-    .theme-kidentity.idpackage h3 {
-        margin-top: 100px;
-
-        a {
-            color: #da1c5c;
+    @media screen and (min-width: 768px) {
+        .theme-menu .main img {
+            display: flex;
         }
     }
 
-    .theme-kidentity .envelope,
-    .theme-kidentity .styleguide {
-        display: flex;
-    }
 
-    .theme-kidentity .envelope img {
+    /* We're goin to ignore this page for now due to style and other issues */
+    /*-------------- Nepal Airlines page --------------*/
+    .theme-nepalairlines .main img {
         width: 100%;
         height: auto;
-        padding: 10px;
+        margin: auto;
     }
 
-
-    .theme-kidentity .styleguide img {
-        padding: 10px;
+    .theme-nepalairlines #websitegif {
         width: 100%;
         height: auto;
     }
 
-    .theme-kidentity #crayonAttributes {
-        width: 107%;
+    @media screen and (min-width: 768px) {
+        .theme-nepalairlines .website-application {
+            display: flex;
+        }
+
+        .theme-nepalairlines .tie-application {
+            align-content: center;
+            width: 70%;
+            height: auto;
+        }
+
+    }
+
+
+
+    /*-------------- Outlet Styles --------------*/
+    .theme-outlet .main img {
+        width: 100%;
         height: auto;
+        margin: auto;
     }
 
-}
-
-
-/* Menu styles */
-
-.theme-menu .main img {
-    margin: auto;
-    justify-content: center;
-}
-
-@media screen and (min-width: 768px) {
-    .theme-menu .main img {
-        display: flex;
-    }
-}
-
-
-/* We're goin to ignore this page for now due to style and other issues */
-/* Nepal Airlines page */
-.theme-nepalairlines .main img {
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
-
-.theme-nepalairlines #websitegif {
-    width: 100%;
-    height: auto;
-}
-
-@media screen and (min-width: 768px) {
-    .theme-nepalairlines .website-application {
-        display: flex;
+    .theme-outlet h1 {
+        margin: var(--text-margin)
     }
 
-    .theme-nepalairlines .tie-application {
-        align-content: center;
-        width: 70%;
+    @media screen and (min-width: 768px) {
+        .theme-outlet .outletcovers {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .theme-outlet .outletcovers img {
+            width: 80%;
+            height: auto;
+        }
+
+
+        .theme-outlet .outletgroup {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            img {
+                height: 300px;
+                width: auto;
+                margin: 0;
+            }
+        }
+
+        .theme-outlet .theexhibitimages img {
+            height: 640px;
+            width: auto;
+        }
+
+        .theme-outlet .theexhibitimages {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .theme-outlet .feathersimages img {
+            height: 640px;
+            width: auto;
+        }
+
+        .theme-outlet .feathersimages {
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+        .theme-outlet .tnnwfocusspread img {
+            width: 1488px;
+            height: auto;
+        }
+
+        .theme-outlet .tnnwspreadsmockup {
+            display: flex;
+        }
+
+        .theme-outlet .sundaydriveimages {
+            display: flex;
+        }
+
+        .theme-outlet .sundaydrive img {
+            width: 730px;
+            height: auto;
+        }
+
+
+        .theme-outlet .theweightofasoleimg {
+            text-align: center;
+        }
+
+        .theme-outlet .theweightofasoleimg img {
+            width: 1480px;
+            height: auto;
+        }
+
+
+        .theme-outlet .galleryimages {
+            display: flex;
+            text-align: center;
+        }
+
+        .theme-outlet .galleryimages img {
+            width: 730px;
+            height: auto;
+        }
+    }
+
+
+    /*-------------- Combined styles for Banking page --------------*/
+    .theme-banking #main img {
+        width: 100%;
         height: auto;
+        margin: auto;
     }
 
-}
-
-
-
-/* Outlet Styles */
-.theme-outlet .main img {
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
-
-.theme-outlet h1 {
-    margin: var(--text-margin)
-}
-
-@media screen and (min-width: 768px) {
-    .theme-outlet .outletcovers {
-        text-align: center;
-        margin: 30px;
+    @media screen and (min-width: 768px) {
+        .theme-banking #main img {
+            width: 70%;
+            height: auto;
+        }
     }
 
-    .theme-outlet .outletcovers img {
-        width: 80%;
+
+
+    /*-------------- Combined styles for Hamlet page --------------*/
+    .theme-hamlet #main img {
+        width: 100%;
         height: auto;
+        margin: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        .theme-hamlet #main img {
+            width: 60%;
+            height: auto;
+        }
     }
 
 
-    .theme-outlet .outletgroup {
+    /*-------------- Combined Styles for GC booklet --------------*/
+    .theme-gcbooklet .gcbookletimages {
+        margin: auto;
         display: flex;
         flex-wrap: wrap;
+        gap: 10px;
         justify-content: center;
+    }
 
-        img {
-            height: 300px;
-            width: auto;
-            margin: 0;
+    .theme-gcbooklet .gcbookletimages img {
+        width: 49%;
+        height: auto;
+    }
+
+
+
+
+
+    /*-------------- About page --------------*/
+    .theme-about #bio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: var(--spacing-xl);
+    }
+
+    @media screen and (min-width: 768px) {
+        .theme-about #bio {
+            flex-direction: row;
+            align-items: center;
         }
     }
 
-    .theme-outlet .theexhibitimages img {
-        height: 640px;
-        width: auto;
+    .theme-about p {
+        max-width: 80ch;
     }
 
-    .theme-outlet .theexhibitimages {
-        display: flex;
+
+    .theme-about #profile {
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+        max-width: 500px;
+        box-shadow: 5px 5px 10px #6f7364;
+        margin: 2em;
+        z-index: -1;
+    }
+
+    .theme-about .msg {
+        display: block;
+        line-height: 1.5em;
+        /*margin: 20px 0px;*/
+        padding: 45px;
         justify-content: center;
     }
 
-
-    .theme-outlet .feathersimages img {
-        height: 640px;
-        width: auto;
-    }
-
-    .theme-outlet .feathersimages {
-        display: flex;
-        justify-content: center;
-    }
-
-
-
-    .theme-outlet .tnnwfocusspread img {
-        width: 1488px;
-        height: auto;
-    }
-
-    .theme-outlet .tnnwspreadsmockup {
-        display: flex;
-    }
-
-    .theme-outlet .sundaydriveimages {
-        display: flex;
-    }
-
-    .theme-outlet .sundaydrive img {
-        width: 730px;
-        height: auto;
-    }
-
-
-    .theme-outlet .theweightofasoleimg {
-        text-align: center;
-    }
-
-    .theme-outlet .theweightofasoleimg img {
-        width: 1480px;
-        height: auto;
-    }
-
-
-    .theme-outlet .galleryimages {
-        display: flex;
-        text-align: center;
-    }
-
-    .theme-outlet .galleryimages img {
-        width: 730px;
-        height: auto;
-    }
-}
-
-
-/* Combined styles for Banking page */
-.theme-banking #main img {
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
-
-@media screen and (min-width: 768px) {
-    .theme-banking #main img {
-        width: 70%;
-        height: auto;
-    }
-}
-
-
-
-/* Combined styles for Hamlet page */
-.theme-hamlet #main img {
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
-
-@media screen and (min-width: 768px) {
-    .theme-hamlet #main img {
-        width: 60%;
-        height: auto;
-    }
-}
-
-
-/* Combined Styles for Gc booklet */
-.theme-gcbooklet .gcbookletimages {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.theme-gcbooklet .gcbookletimages img {
-    width: 49%;
-    height: auto;
-}
-
-
-
-
-
-/* About page */
-.theme-about #bio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: var(--spacing-xl);
-}
-
-@media screen and (min-width: 768px) {
-    .theme-about #bio {
-        flex-direction: row;
-        align-items: center;
-    }
-}
-
-.theme-about p {
-    max-width: 80ch;
-}
-
-
-.theme-about #profile {
-    border-radius: 15px;
-    width: 100%;
-    height: 100%;
-    max-width: 500px;
-    box-shadow: 5px 5px 10px #6f7364;
-    margin: 2em;
-    z-index: -1;
-}
-
-.theme-about .msg {
-    display: block;
-    line-height: 1.5em;
-    /*margin: 20px 0px;*/
-    padding: 45px;
-    justify-content: center;
 }
