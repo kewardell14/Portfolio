@@ -495,23 +495,17 @@
 
     /**Description text, client, and disciplines**/
     .overviewtext {
-        display: flex;
+        display: column;
         margin: var(--text-margin);
         max-width: 70ch;
         margin-top: var(--spacing-lg);
         margin-bottom: var(--spacing-xl);
     }
 
-    @media screen and (min-width: 768px) {
-        .overviewtext {
-            margin: auto;
-            margin-block: var(--spacing-2xl);
-        }
-    }
 
     /**Descriptive text beginning**/
     .description {
-        padding-right: var(--spacing-lg);
+        padding-right: var(--spacing-xl);
 
         p {
             padding-top: calc (var(--spacing-xs) / 2);
@@ -520,6 +514,7 @@
 
     /**Client and Disciplines box**/
     .clientanddisciplines {
+        margin-top: var(--spacing-xl);
         display: flex;
         flex-direction: column;
         /*padding: 30px;
@@ -528,6 +523,20 @@
             margin-bottom: 1px;
         }*/
     }
+
+    @media screen and (min-width: 768px) {
+        .overviewtext {
+            display: flex;
+            margin: auto;
+            margin-block: var(--spacing-2xl);
+        }
+
+        .clientanddisciplines {
+            margin-top: 0;
+        }
+    }
+
+
 
     /* Customize a button and hover later if you use them. */
     .button {
