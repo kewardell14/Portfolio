@@ -1,0 +1,116 @@
+.gallery {
+    /*display: grid; gap: var(--space-md); grid-template-columns: 1fr; */
+    /* mobile */
+    /* Chat GPT stuff above */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    align-content: center;
+
+    /* Decide the spacing variable here */
+    img {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        align-content: center;
+        object-fit: cover;
+        /* was object-fit: contain before */
+    }
+}
+
+.grid-item {
+    aspect-ratio: 4 / 3;
+    /* slightly wider */
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+
+    /* height: 100%; display: flex; justify-content: center; align-items: center; */
+    img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        /* removes inline spacing issues */
+    }
+}
+
+.grid-item:hover {
+    transform: translateY(-8px);
+    opacity: 0.7;
+}
+
+/* 1. The Overlay Container */
+.grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Using your brand color with transparency */
+    background-color: var(--color-brand);
+    /* Adjust '0.85' if you want it more or less see-through */
+    background: color-mix(in srgb, var(--color-brand), transparent 20%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Hidden by default */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    /* Allows the click to pass through to the link */
+}
+
+/* 2. The Text Styling */
+.grid-overlay span {
+    color: white;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: var(--spacing-md);
+    letter-spacing: 0.05em;
+}
+
+/* 3. The Hover Trigger */
+.grid-item:hover .grid-overlay {
+    opacity: 1;
+}
+
+
+
+/*.container { width: min(1100px, 90%); margin-inline: auto; }*/
+@media screen and (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        /* Decide the spacing variable here */
+        /* Fix this layout-wise with everything else, it may not need padding here specifically. */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gallery-item {
+        transition: none;
+    }
+}
+
+
+/*-------------- Home Styles --------------*/
+.intro {
+    h1 {
+        text-align: center;
+        margin: var(--text-margin);
+        color: var(--color-primary);
+    }
+}

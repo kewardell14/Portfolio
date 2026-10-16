@@ -1,0 +1,42 @@
+/**Description text, client, and disciplines**/
+.overviewtext {
+    display: column;
+    margin: var(--text-margin);
+    max-width: 70ch;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+
+/**Descriptive text beginning**/
+.description {
+    padding-right: var(--spacing-xl);
+
+    p {
+        padding-top: calc (var(--spacing-xs) / 2);
+    }
+}
+
+/**Client and Disciplines box**/
+.clientanddisciplines {
+    margin-top: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    /*padding: 30px;
+
+        h3 {
+            margin-bottom: 1px;
+        }*/
+}
+
+@media screen and (min-width: 768px) {
+    .overviewtext {
+        display: flex;
+        margin: auto;
+        margin-block: var(--spacing-2xl);
+    }
+
+    .clientanddisciplines {
+        margin-top: 0;
+    }
+}

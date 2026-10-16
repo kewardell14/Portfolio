@@ -1,0 +1,136 @@
+/*@layer tokens {*/
+:root {
+    /* Colors */
+
+    /* My personal brand color */
+    /* Possible brand color: #0077ff */
+    --color-brand: #00aeef;
+
+    /* Colors for Theme*/
+    --color-background: #ffffff;
+    --color-text: #111111;
+    --color-primary: #00aeef;
+    --color-secondary: white;
+
+    /* Semantic Colors */
+    --color-success: #2e7d32;
+    --color-warning: #ed6c02;
+    --color-error: #d32f2f;
+
+    /* Links and Buttons*/
+    --color-link: var(--color-primary);
+    --color-link-hover: color-mix(in srgb, var(--color-link) 50%, black 50%);
+
+    --button-primary: var(--color-primary);
+    --button-primary-hover: color-mix(in srgb, var(--button-primary) 70%, black 30%);
+    --button-focus: #005fcc;
+
+    /* Base unit */
+    --base-unit: 1rem;
+
+    /* Spacing scale */
+    --spacing-xs: calc(var(--base-unit) * 0.25);
+    /* 0.25rem */
+    --spacing-sm: calc(var(--base-unit) * 0.5);
+    /* 0.5rem */
+    --spacing-md: var(--base-unit);
+    /* 1rem */
+    --spacing-lg: calc(var(--base-unit) * 2);
+    /* 2rem */
+    --spacing-xl: calc(var(--base-unit) * 4);
+    /* 4rem */
+    --spacing-2xl: calc(var(--base-unit) * 8);
+    /* 8rem, optional extra-large */
+    --spacing-text-margin: calc(var(--base-unit) * 12.5);
+    /* 12.5rem ≈ 200px */
+    --text-margin: clamp(var(--spacing-xl), 10vw, var(--spacing-text-margin));
+
+    /* Container margin using clamp() */
+    --container-margin: clamp(var(--spacing-md), 10vw, var(--spacing-xl));
+
+    /* Typography */
+    --font-body: "itc-avant-garde-gothic-pro", sans-serif;
+    --font-heading: "itc-avant-garde-gothic-pro", sans-serif;
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+
+    --font-size-base: 1rem;
+    --scale-ratio: 1.25;
+
+    --font-size-sm: calc(var(--font-size-base) / var(--scale-ratio));
+    --font-size-md: var(--font-size-base);
+    --font-size-lg: calc(var(--font-size-base) * var(--scale-ratio));
+    --font-size-xl: calc(var(--font-size-base) * var(--scale-ratio) * var(--scale-ratio));
+
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-loose: 1.7;
+
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    --radius-pill: 999px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+
+    /* Order */
+    --z-base: 0;
+    --z-side-menu: 1000;
+    --z-menu-button: 1001;
+
+    /* Transitions */
+    --normal-ease: 0.3s ease;
+
+    /* Breakpoints (reference only) */
+    --bp-tablet: 768px;
+    --bp-computer: 1024px;
+
+
+}
+
+.theme-default {
+    /* uses :root values */
+}
+
+.theme-dark {
+    --color-bg: #111;
+    --color-text: #f5f5f5;
+
+    /*****Navigation*****/
+    background-color: #333;
+    color: white;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: white;
+        font-family: "itc-avant-garde-gothic-pro", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    nav a,
+    .dropbtn {
+        color: white;
+    }
+
+    .dropdown-content a:hover {
+        background-color: white;
+        color: var(--cyan);
+    }
+
+    .dropdown-content a {
+        background-color: var(--cyan);
+        color: white;
+    }
+
+}

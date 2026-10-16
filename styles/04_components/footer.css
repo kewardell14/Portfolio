@@ -1,0 +1,55 @@
+footer {
+    /*text-align: center;
+            padding: var(--space-lg);*/
+    /* This is ChatGPT's suggestion */
+    color: var(--color-brand);
+    margin-top: var(--spacing-xl);
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "Lora", Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    p {
+        font-size: 1em;
+        margin: 20px;
+    }
+
+    .logo {
+        width: 250px;
+    }
+
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.social {
+    /*display: flex;
+            justify-content: center;
+            gap: var(--space-md);*/
+    /* This is ChatGPT's suggestion */
+    height: auto;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    background: var(--color-brand);
+    color: white;
+    margin-right: 20px;
+}

@@ -1,10 +1,22 @@
-@layer reset, tokens, base, layout, components, themes, specifics;
+@layer tokens, base, layout, components, specifics;
 
-/* Import in order */
-@import url('./reset.css') layer(reset);
-@import url('./tokens.css') layer(tokens);
-@import url('./base.css') layer(base);
-@import url('./layout.css') layer(layout);
-@import url('./components.css') layer(components);
-@import url('./themes.css') layer(themes);
-@import url('./specifics.css') layer(specifics);
+@import url("01_tokens/tokens.css") layer(tokens);
+
+@import url("02_base/reset.css") layer(base);
+@import url("02_base/elements.css") layer(base);
+
+@import url("03_layout/layout.css") layer(layout);
+@import url("03_layout/grid.css") layer(layout);
+
+@import url("04_components/navigation.css") layer(components);
+@import url("04_components/footer.css") layer(components);
+@import url("04_components/project_description.css") layer(components);
+@import url("04_components/image_combinations.css") layer(components);
+@import url("04_components/forms.css") layer(components);
+@import url("04_components/buttons.css") layer(components);
+@import url("04_components/components.css") layer(components);
+
+@import url("05_specifics/home.css") layer(specifics);
+@import url("05_specifics/about.css") layer(specifics);
+@import url("05_specifics/contact.css") layer(specifics);
+@import url("05_specifics/specifics.css") layer(specifics);

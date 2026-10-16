@@ -40,6 +40,30 @@
 
     }
 
+
+    /*
+    .theme-about {
+
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--color-primary);
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        #main p {
+            font-family: var(--font-body);
+            line-height: 1.5;
+        }
+    }*/
+
+    /*
     .theme-mammoth {
         --color-primary: rgb(168, 61, 47);
         --font-heading: "urbane-rounded", sans-serif;
@@ -94,7 +118,6 @@
     }
 
     .theme-kronk {
-        /* uses :root values */
         --color-bg: white;
         --color-text: #black;
 
@@ -183,7 +206,6 @@
     }
 
 
-    /* We are going to ignore Nepal Airlines for now because of style and other issues. */
     .theme-nepalairlines {
 
         h1,
@@ -228,8 +250,6 @@
     }
 
     .theme-banking {
-
-        /* uses :root values */
         h1,
         h2,
         h3,
@@ -250,8 +270,6 @@
 
 
     .theme-hamlet {
-
-        /* uses :root values */
         h1,
         h2,
         h3,
@@ -281,26 +299,5 @@
             color: rgb(9, 107, 143);
         }
     }
-
-
-    .theme-about {
-
-        /* uses :root values */
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            color: var(--color-primary);
-            font-family: var(--font-heading);
-            font-weight: 700;
-            font-style: normal;
-        }
-
-        #main p {
-            font-family: var(--font-body);
-            line-height: 1.5;
-        }
-    }
+*/
 }

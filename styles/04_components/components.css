@@ -1,0 +1,59 @@
+/* Come back and add a nice ease transition to the menu items */
+
+
+.text-container {
+    max-width: 60ch;
+    margin: auto;
+    margin-block: var(--text-margin);
+    /* roughly 70 characters per line for readability */
+}
+
+@media screen and (min-width: 768px) {
+    .text-container {
+        max-width: 80ch;
+    }
+}
+
+.thank-you {
+    margin-block: var(--text-margin);
+    margin: auto;
+}
+
+
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-slides img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.2em 0.5em;
+    z-index: 10;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}

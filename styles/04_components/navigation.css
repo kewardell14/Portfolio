@@ -1,0 +1,220 @@
+/* Keep all dropdown information in components */
+.logo {
+    width: 250px;
+    /*Controls image size*/
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    object-fit: cover;
+    height: 100%;
+
+    a {
+        text-align: center;
+        color: white;
+        padding: var(--spacing-md);
+        /* This adds space around the links, so the hover is more visually interesting. It doesn't work as well if it is directly applied to the hover. */
+        text-decoration: none;
+        font-family: "itc-avant-garde-gothic-pro", sans-serif;
+        /* font-family: var(--font);*/
+        font-weight: 700;
+        font-style: normal;
+
+
+        &:hover {
+            background-color: white;
+            color: var(--color-brand);
+        }
+    }
+
+
+
+
+
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+
+        /* Style The Dropdown Button */
+        .dropbtn {
+            background-color: var(--color-brand);
+            color: white;
+            font-weight: 700;
+            padding: var(--spacing-md);
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+
+            /* Links inside the dropdown */
+            a {
+                color: var(--color-brand);
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                font-family: "itc-avant-garde-gothic-pro", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+            }
+
+            /* Change color of dropdown links on hover */
+            a:hover {
+                background-color: rgb(214, 234, 255);
+                color: var(--color-brand);
+            }
+        }
+    }
+}
+
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: white;
+    color: var(--color-brand);
+}
+
+
+
+
+/* Slide Menu */
+#menu-btn {
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    justify-self: end;
+    margin-right: var(--spacing-xl);
+    z-index: var(--z-menu-button);
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    #menu-btn {
+        z-index: -1;
+    }
+}
+
+#side-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: var(--color-brand);
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-lg);
+    padding-top: var(--spacing-2xl);
+    /* match header height */
+    transition: right 0.3s ease;
+    z-index: var(--z-side-menu);
+}
+
+#side-menu a {
+    color: white;
+    padding: var(--spacing-md);
+    text-decoration: none;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 700;
+}
+
+#side-menu.open {
+    right: 0;
+}
+
+/* Dark overlay */
+#menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+#menu-overlay.active {
+    display: block;
+}
+
+
+/* Process link information */
+.process {
+    text-align: center;
+    margin: var(--text-margin);
+}
+
+
+
+
+/* Hide original nav on mobile */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+}
+
+.menu-category {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.category-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: var(--spacing-md);
+    padding-block: var(--spacing-lg);
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 700;
+    width: 100%;
+    font-size: 16px;
+    /* match the links */
+    /* makes button full width like links */
+}
+
+
+.category-links {
+    display: none;
+    flex-direction: column;
+    padding-left: var(--spacing-md);
+}
+
+.category-links a {
+    color: var(--color-brand) !important;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+/* Show links when open */
+.menu-category.open .category-links {
+    display: flex;
+    background-color: white;
+}
