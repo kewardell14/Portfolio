@@ -48,6 +48,19 @@
     /* Container margin using clamp() */
     --container-margin: clamp(var(--spacing-md), 10vw, var(--spacing-xl));
 
+
+    /* Layout and responsive widths */
+
+    /* Space between content and the viewport edges */
+    --page-gutter: clamp(1rem, 4vw, 3rem);
+
+    /* Maximum widths for different types of content */
+    --content-text-max: 42rem;
+    --content-wide-max: 90rem;
+
+
+
+
     /* Typography */
     --font-body: "itc-avant-garde-gothic-pro", sans-serif;
     --font-heading: "itc-avant-garde-gothic-pro", sans-serif;

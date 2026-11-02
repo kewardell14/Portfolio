@@ -30,6 +30,7 @@
         "hero hero other"
         "hero hero detail";
     aspect-ratio: 16 / 9;
+    gap: var(--spacing-sm);
     /* Adds space above/below the grid */
 
     /* Assign the elements to the areas defined above */
@@ -57,7 +58,6 @@
 
 .product-grid-split {
     display: grid;
-    /*gap: var(--spacing-md);*/
 
     /* The Layout Map */
     grid-template-areas:
@@ -65,7 +65,7 @@
 
     /* REMOVE height: 150px; */
     aspect-ratio: 21 / 9;
-    /*margin-block: var(--spacing-lg);*/
+    gap: var(--spacing-sm);
 
     /* Ensure images fill their assigned areas perfectly */
     img {

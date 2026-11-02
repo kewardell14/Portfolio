@@ -1,0 +1,84 @@
+/* grid.css */
+
+/* The main project-page grid */
+.project-page {
+    display: grid;
+    grid-template-columns:
+        [full-start] minmax(0, 1fr) [wide-start] minmax(0,
+            min(var(--content-wide-max),
+                calc(100% - 2 * var(--page-gutter)))) [wide-end] minmax(0, 1fr) [full-end];
+}
+
+/* Default placement for the main page sections */
+.project-page>* {
+    grid-column: wide-start / wide-end;
+    min-width: 0;
+}
+
+/* Narrower content, such as the project overview */
+.project-page .content {
+    width: min(100%, var(--content-text-max));
+    justify-self: center;
+}
+
+/* Wider images and content */
+.project-page .wide {
+    grid-column: wide-start / wide-end;
+    width: 100%;
+}
+
+/* Full-bleed content */
+.project-page .full-width {
+    grid-column: full-start / full-end;
+    width: 100%;
+    min-width: 0;
+}
+
+/* Keep images responsive */
+.project-page img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Let the hero image fill its available width */
+.project-hero full-width {
+    width: 100%;
+    margin: 0;
+}
+
+/* Allow the project work to share the page's grid lines */
+.project-work {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: full-start / full-end;
+    min-width: 0;
+
+    section {
+        padding-block: clamp(var(--spacing-sm), 2vw, var(--spacing-md));
+    }
+}
+
+/* Default placement for sections within the project work */
+.project-work>* {
+    grid-column: wide-start / wide-end;
+    min-width: 0;
+}
+
+/* Narrow explanatory sections */
+.project-work>.content {
+    width: min(100%, var(--content-text-max));
+    justify-self: center;
+}
+
+/* Wider visual sections */
+.project-work>.wide {
+    grid-column: wide-start / wide-end;
+    width: 100%;
+}
+
+/* Images or sections that should reach the viewport edges */
+.project-work>.full-width {
+    grid-column: full-start / full-end;
+    width: 100%;
+}

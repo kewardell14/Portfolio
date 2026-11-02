@@ -13,15 +13,10 @@
     padding: 0;
 }
 
-html {
-    font-size: 62.5%;
-    /* 1rem = 10px */
-}
-
 body {
     font-family: system-ui, -apple-system, sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.6;
+    font-size: 1.1rem;
+    line-height: 1.1;
 }
 
 ul {
@@ -34,7 +29,7 @@ a {
 
 img {
     max-width: 100%;
-    display: block;
+    /*display: block;*/
 }
 
 button {

@@ -18,5 +18,4 @@
 
 @import url("05_specifics/home.css") layer(specifics);
 @import url("05_specifics/about.css") layer(specifics);
-@import url("05_specifics/contact.css") layer(specifics);
 @import url("05_specifics/specifics.css") layer(specifics);
